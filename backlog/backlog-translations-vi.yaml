@@ -1,0 +1,584 @@
+# Vietnamese titles / acceptance criteria for backlog-breakdown.yaml (shown under the Japanese text).
+# Keys: epic ID, story ID -> title; task T-ID (sequence in backlog-breakdown.yaml) -> title + ac.
+# ac must have the same number of lines as the Japanese ac (checked by the sync script).
+
+E-02: Kiểm hàng nhập & phán định tiếp nhận
+E-02-S01: Ghi nhận kiểm hàng nhập
+E-02-S02: Đối chiếu dải nhiệt khi nhập
+E-02-S03: Xin & duyệt dải nhiệt tạm thời
+E-02-S04: Số lượng nhận / từ chối / tạm giữ và mã lý do
+E-02-S05: Tạo lô & đơn vị tồn kho
+E-02-S06: Nhập & kiểm tra mục truy xuất theo luật
+E-02-S07: Tự động cách ly khi kiểm hàng không đạt
+E-03: Quản lý trạng thái lô & tồn kho
+E-03-S01: Kiểm soát chuyển trạng thái lô
+E-03-S02: Quyết định cách ly / giải phóng / hủy bỏ
+E-06: Quy tắc hạn dùng & phân bổ
+E-06-S02: Phán định cửa sổ giao hàng
+E-06-S03: Kiểm tra cấm đảo ngược ngày (日付逆転)
+E-06-S05: Hiển thị bằng chứng phán định phân bổ
+E-06-S06: Quản lý lịch sử giao (dòng giao đã nhận)
+E-08: Phân bổ, lấy hàng & xếp xe
+E-08-S01: Phân bổ nguyên tử (atomic)
+E-08-S02: Tạo task lấy hàng (picking)
+E-09: Kiểm tra trước xuất & xác nhận xuất hàng
+E-09-S02: Xác nhận xuất hàng & điều xe
+E-10: Hoàn tất giao hàng (POD) & khiếu nại
+E-10-S01: Ghi nhận hoàn tất giao hàng (POD)
+E-10-S02: Phán định bằng chứng theo điều kiện giao
+E-10-S03: Hàng đợi POD ngoại tuyến
+E-10-S04: Quản lý bằng chứng POD
+E-11: Lập tuyến & kiểm tra thời gian ràng buộc tài xế
+E-11-S02: Kiểm tra giới hạn thời gian ràng buộc (拘束時間) & giờ lái
+E-11-S03: Tự động chèn điểm nghỉ
+E-11-S04: Quản lý phiên bản quy tắc tài xế
+E-11-S05: Tổng hợp thực tế thời gian ràng buộc
+E-12: Công bố tuyến & quản lý vận hành
+E-12-S01: Công bố tuyến & quản lý phiên bản
+E-12-S04: Ghi nhận sự cố bất thường
+E-13: Nhập & đánh giá dữ liệu nhiệt độ
+E-13-S01: Nhập CSV từ logger
+E-13-S02: Đánh giá số đo nhiệt độ
+E-13-S03: Quản lý phiên bản chính sách dải nhiệt
+E-13-S04: Phát hiện thiếu bản ghi (completeness queue)
+E-14: Quản lý cảnh báo & sai lệch nhiệt độ
+E-14-S01: Hàng đợi cảnh báo
+E-14-S02: Thông báo cảnh báo
+E-14-S03: Quản lý hồ sơ sai lệch
+E-16: Tra cứu truy xuất nguồn gốc
+E-16-S01: Truy xuất hai chiều
+E-16-S02: Quản lý mã định danh nhóm hàng chịu luật (gạo / bò)
+E-17: Quản lý thu hồi
+E-17-S01: Quản lý hồ sơ thu hồi
+E-17-S02: Đối chiếu số lượng thu hồi
+E-17-S03: Thông báo thu hồi (phiên bản & phê duyệt)
+E-19: Bằng chứng kiểm toán & lưu giữ
+E-19-S01: Xuất bằng chứng kiểm toán
+E-20: Quản lý master
+E-20-S02: Master khách hàng & hợp đồng khách×SKU
+E-20-S06: Phê duyệt & quản lý phiên bản master
+E-21: Xác thực, phân quyền & nhật ký kiểm toán
+E-21-S01: Đăng nhập SSO & MFA
+E-21-S02: Phiên ngắn cho thiết bị dùng chung
+E-21-S03: Quản lý vai trò & quyền (RBAC)
+E-21-S04: Nhật ký kiểm toán (chỉ ghi thêm)
+E-22: Liên kết hệ thống ngoài
+E-22-S02: Liên kết dịch vụ bản đồ
+E-22-S03: Nền tảng thông báo email
+E-23: Chuyển đổi dữ liệu (migration)
+E-23-S02: Chuyển đổi & nạp dữ liệu (phán định và lineage)
+E-24: Nền tảng chung & phi chức năng
+E-24-S03: Mã hóa & quản lý thông tin bí mật
+E-24-S04: Thành phần chung UI tiếng Nhật, giờ JST, khả năng tiếp cận
+
+T-001:
+  title: Mở rộng parser GS1-128 (AI 11/15), đối chiếu GTIN–SKU, bỏ giá trị số lượng mặc định
+  ac:
+    - Đọc AI 01/10/11/15/17 và tự điền mọi mục trừ số lượng
+    - GTIN không khớp SKU của dòng chi tiết thì báo lỗi nhập
+    - Ô số lượng bắt đầu để trống, số lượng dự kiến chỉ hiện làm gợi ý
+T-002:
+  title: Nhập ngày sản xuất (E13), thêm inbound_lines.mfg_source, bỏ suy ngày sản xuất trong seed
+  ac:
+    - Nguồn ngày sản xuất (GS1-128 / nhãn / nhập tay) được lưu ở mfg_source
+    - Seed / migration không suy ngày sản xuất từ số lô
+T-003:
+  title: Đổi record_inspection sang dùng ngưỡng của chính sách dải nhiệt có phiên bản (resolve_tzp_version)
+  ac:
+    - Ngưỡng lấy từ phiên bản TZP có hiệu lực tại thời điểm đo, không dùng hằng số trong code
+    - Không có phiên bản hiệu lực thì chặn xác nhận
+T-004:
+  title: Chuyển lệch dải nhiệt thành phán định blocked và ghi rule_evaluation_events (API có intent)
+  ac:
+    - Nhiệt độ ngoài dải bị blocked chứ không chỉ cảnh báo, không xác nhận được
+    - Mỗi lần phán định ghi đúng 1 dòng rule_evaluation_events
+T-005:
+  title: Bảng temp_zone_requests và RPC / route handler (zod) cho tạo đơn, duyệt, rút đơn
+  ac:
+    - Người tạo đơn trùng người duyệt thì DB từ chối
+    - 3 RPC chỉ gọi được qua route handler (session → vai trò → zod)
+T-006:
+  title: evaluate_zone_match tham chiếu đơn dải nhiệt tạm thời còn hiệu lực, ghi ID đơn vào rule_refs
+  ac:
+    - Chỉ đơn đã duyệt và còn hạn mới được dùng khi phán định
+T-007:
+  title: Màn SCR-016 (hàng đợi chờ duyệt + chi tiết, bố cục 2 cột)
+  ac:
+    - Dùng lại ApprovalPanel / BlockPanel, hiển thị đủ mọi trạng thái của wireframe phương án A
+T-008:
+  title: Job hết hạn đơn dải nhiệt tạm thời và hộp việc "chờ duyệt dải nhiệt tạm thời"
+  ac:
+    - Đơn quá hạn tự chuyển expired và không còn dùng để phán định
+    - Hộp việc của người duyệt hiển thị số đơn đang chờ
+T-009:
+  title: submit_inbound_acceptance kiểm tra số lượng nhận = 0 ở dòng có vấn đề và khóa stepper tiếp nhận
+  ac:
+    - Dòng lệch dải nhiệt hoặc mã bò 9 số không xác nhận được nếu số lượng nhận > 0
+T-010:
+  title: Đánh giá lại dải nhiệt khi xác nhận tiếp nhận và sửa vai trò duyệt chênh lệch
+  ac:
+    - Chạy lại evaluate_zone_match bên trong finalize_inbound_acceptance
+    - Không điền sẵn người tạo làm người được nhờ duyệt
+T-011:
+  title: Cột lô to-be (trace_status, tách mục truy xuất gạo, supplier_lot, received_at) và xử lý ghi
+  ac:
+    - Tách lots.rice thành rice_origin / rice_transaction_id, tạo index truy xuất IDX-03..06
+    - Lô có mã bò 9 số được tạo với trace_status = business_review
+T-012:
+  title: In nhãn lô (bố cục cho tablet) và API kiểm toán việc in
+  ac:
+    - In được nhãn lô khi xác nhận tiếp nhận, mỗi lần in để lại sự kiện kiểm toán
+T-013:
+  title: Nhập mục truy xuất gạo (E18) và kiểm tra bắt buộc trong record_inspection
+  ac:
+    - SKU thuộc nhóm gạo thiếu mục bắt buộc thì không xác nhận được
+T-014:
+  title: Kiểm tra mã cá thể bò (9 số = cảnh báo xem xét nghiệp vụ, cấm đệm 0 / số chữ số khác = lỗi nhập)
+  ac:
+    - Mã 9 số được lưu nguyên giá trị đã nhận, không đệm số 0
+    - Không phải 9 hoặc 10 số, hoặc có ký tự không phải số thì báo lỗi nhập
+T-015:
+  title: Ghi deviation_case_lots khi mở hồ sơ sai lệch từ màn tiếp nhận
+  ac:
+    - Hồ sơ sai lệch và lô liên quan nối bằng khóa ngoại (không dùng mảng số lô)
+T-016:
+  title: Trigger chỉ cho INSERT trên lot_events và cập nhật deviation_case_lots khi phán định
+  ac:
+    - DB từ chối UPDATE / DELETE trên lot_events
+T-017:
+  title: decide_quarantine chặn giải phóng lô có trace_status = business_review (bò 9 số)
+  ac:
+    - Chưa xác nhận được mã cá thể 10 số thì không giải phóng
+T-018:
+  title: decide_quarantine chặn (blocked) giải phóng lô thuộc hồ sơ thu hồi chưa đóng (vẫn cho hủy)
+  ac:
+    - Giải phóng trả về blocked kèm rule_evaluation_events và kiểm toán, không RAISE
+    - Vẫn hủy bỏ được dù đang có hồ sơ thu hồi
+T-019:
+  title: Tải lên tệp bằng chứng kèm quyết định cách ly
+  ac:
+    - Lưu vào attachments (owner_type = lot_event), tham chiếu được từ sự kiện quyết định
+T-020:
+  title: UI SCR-025 (2 cột, lô tự cách ly, BlockPanel thu hồi, câu chữ, ngày theo server)
+  ac:
+    - Lô tự cách ly do cảnh báo nhiệt hiển thị lý do và giờ cách ly
+    - Lô thuộc hồ sơ thu hồi hiển thị lý do không thể giải phóng trong BlockPanel
+T-021:
+  title: Truyền ngày giao dự kiến vào phán định cửa sổ giao ④ (chốt nguồn dữ liệu, sửa cả TS và SQL)
+  ac:
+    - Phán định theo ngày giao dự kiến, không theo ngày xuất
+    - SKU có 消費期限 (hạn tiêu thụ an toàn) chạy phán định chặn cứng trước, rồi mới xét cửa sổ
+T-022:
+  title: Lấy mốc so sánh đảo ngược ngày từ DB theo cặp khách×SKU, nối lịch sử qua bảng đối chiếu mã khách cũ↔mới
+  ac:
+    - Mốc so sánh là dòng giao đã nhận có giờ nhận mới nhất của đúng cặp khách×SKU (không so với ngày hôm nay)
+    - Không dùng lịch sử của khách khác; chỉ nối lịch sử khi có bảng đối chiếu mã đã duyệt
+T-023:
+  title: Query đếm POD chưa đồng bộ và dòng migration BUSINESS_REVIEW (cho cảnh báo SCR-034)
+  ac:
+    - Trả về số POD chưa đồng bộ và số dòng đang xem xét migration theo từng khách×SKU
+T-024:
+  title: Đổi loader SCR-034 sang đọc rule_evaluation_events, hiện kết luận DB, verdict_mismatch và phiên bản quy tắc
+  ac:
+    - Kết luận trên màn hình lấy từ kết quả đánh giá của DB, không tính ở client
+    - Hiển thị phiên bản quy tắc dùng lúc đánh giá
+T-025:
+  title: UI SCR-034 (tách thẻ theo loại hạn, thống nhất nhãn "chưa thiết lập", quyền xem ROLE-010)
+  ac:
+    - 賞味期限 (hạn ngon nhất – cảnh báo) và 消費期限 (hạn an toàn – chặn cứng) hiển thị tách biệt
+T-026:
+  title: Thêm delivery_outcome_events, cập nhật trạng thái delivery_history trong cùng transaction
+  ac:
+    - Dòng bị từ chối nhận / trả toàn bộ bị loại khỏi mốc so sánh, dòng trả một phần vẫn giữ
+T-027:
+  title: Bỏ gộp theo ngày khi hoàn tất giao, chống trùng theo từng POD
+  ac:
+    - Cùng ngày nhiều chuyến thì chuyến có giờ nhận muộn hơn làm mốc so sánh
+T-028:
+  title: Bảng rule_evaluation_events và helper ghi chung (trả blocked và chốt sự kiện, không RAISE)
+  ac:
+    - Vi phạm ràng buộc cứng vẫn commit sự kiện đánh giá
+T-029:
+  title: Hàm SQL kiểm tra ràng buộc phân bổ (① 消費期限 ② dải nhiệt ③ trạng thái truy xuất ④ cửa sổ giao ⑤ đảo ngược ngày) chạy trong commit_allocation_core
+  ac:
+    - Kiểm lại đủ 5 ràng buộc trong cùng transaction và lưu mốc so sánh comparison_delivery_id
+T-030:
+  title: Tham chiếu phiên bản hợp đồng (chưa thiết lập = xem xét nghiệp vụ, chưa duyệt D-02 thì không phân bổ), bỏ nhận kết luận từ client
+  ac:
+    - Không tự áp quy tắc mặc định (1/3…) cho AGR-008 / AGR-014
+T-031:
+  title: lock_timeout và ánh xạ 409 "đang bận", lots.qty_reserved và ràng buộc CHECK
+  ac:
+    - Phân bổ đồng thời vào cùng lô không gây phân bổ trùng
+T-032:
+  title: Thêm khóa phiên bản quy tắc và mốc so sánh vào allocations, kiểm lại ràng buộc khi duyệt xem xét nghiệp vụ
+  ac:
+    - decide_business_review chạy lại check_allocation_constraints
+    - Hạn nộp đơn được tính theo giờ hệ thống
+T-033:
+  title: Đọc dữ liệu phân bổ theo khách×SKU và đo EXPLAIN với 300,000 dòng xuất
+  ac:
+    - Xác nhận execution plan dùng partial index IDX-01 và lưu kết quả đo
+T-034:
+  title: Test giá trị biên ràng buộc cứng phân bổ (đúng ngày / trước 1 ngày 消費期限, nhiều chuyến cùng ngày, hợp đồng chưa thiết lập, phân bổ đồng thời)
+  ac:
+    - Test tự động xác nhận các ca biên qua / blocked của từng ràng buộc
+T-035:
+  title: UI SCR-033 (3 panel cần xử lý, đếm ngược hạn nộp xem xét nghiệp vụ, cột hợp đồng, dòng mở rộng chi tiết phán định)
+  ac:
+    - Dòng xem xét nghiệp vụ hiện thời gian còn lại đến hạn nộp (15:00 ngày trước ngày xuất)
+T-036:
+  title: Nút "Tạo task lấy hàng", xuất CSV và endpoint CSV có kiểm toán
+  ac:
+    - Mỗi lần xuất CSV để lại sự kiện kiểm toán
+T-037:
+  title: confirm_dispatch kiểm lại 消費期限, cách ly, trace_status sau khi lấy lô
+  ac:
+    - Lô đã hết hạn, bị cách ly hoặc chưa xác định truy xuất sau khi phân bổ thì không xác nhận xuất được và có sự kiện đánh giá
+T-038:
+  title: Đổi ghi POD sang tham chiếu route_stops / route_stop_lines
+  ac:
+    - complete_delivery đọc từ bảng điểm dừng / chi tiết có phiên bản
+T-039:
+  title: Tách tên người nhận sang pod_recipients, cập nhật hàm kiểm tra bằng chứng
+  ac:
+    - pods chỉ giữ khóa và hash, tên người nhận nằm ở bảng riêng lưu 3 năm
+T-040:
+  title: UI SCR-062 (thanh điều hướng dưới, chống rời trang, tiêu đề, bỏ phần demo) và kiểm tra chủ tuyến
+  ac:
+    - Tài xế không phụ trách thì không đọc được tuyến, cả trên màn hình lẫn RLS
+T-041:
+  title: Danh sách mã ngoại lệ, bộ bằng chứng bắt buộc (gồm ảnh nhiệt kế EX-05), bằng chứng POD bắt buộc theo hợp đồng
+  ac:
+    - Bằng chứng bắt buộc theo hình thức giao trên xe / giao tận cửa và theo mã ngoại lệ được quyết định từ phiên bản hợp đồng
+T-042:
+  title: Lấy ngưỡng nhiệt thùng xe từ chính sách dải nhiệt có phiên bản
+  ac:
+    - Chuyến lạnh / đông có nhiệt độ lúc đến ngoài dải thì bắt buộc EX-05 và ảnh
+T-043:
+  title: Server đối chiếu vị trí thiết bị với geofence điểm giao (ngoài vùng = cảnh báo + gắn cờ cho điều phối)
+  ac:
+    - Chỉ dùng vị trí tại thời điểm lấy POD, không lưu địa chỉ hay GPS liên tục
+    - Ngoài vùng hoặc không rõ vị trí vẫn hoàn tất được, location_match và cờ được lưu lại
+T-044:
+  title: Hàng đợi mã hóa trên PWA (Service Worker + IndexedDB, AES-GCM), bỏ công tắc Cookie
+  ac:
+    - POD lúc ngoại tuyến được mã hóa lưu trên máy, không còn bản rõ
+T-045:
+  title: Cache ngoại tuyến gói lịch chạy đã công bố (mở được SCR-062 khi mất mạng)
+  ac:
+    - Ở chế độ máy bay vẫn mở được lịch chạy trong ngày và SCR-062
+T-046:
+  title: pods.client_pod_id (UNIQUE) + content_sha256 và RPC nhận hàng loạt idempotent
+  ac:
+    - Gửi lại cùng POD chỉ ghi 1 bản và trả lại kết quả lần trước
+T-047:
+  title: Tự đồng bộ (khi có mạng lại / khi mở app), sửa thông báo hoàn tất, giới hạn hàng đợi cảnh báo 6h / 8h
+  ac:
+    - Chưa đồng bộ 6 giờ thì cảnh báo, 8 giờ thì báo chạm giới hạn
+T-048:
+  title: Gắn với thiết bị đã đăng ký, từ chối đồng bộ bản ghi của tài xế khác
+  ac:
+    - Bản ghi không phải của tài xế đang đăng nhập bị từ chối khi đồng bộ
+T-049:
+  title: Lưu ảnh và chữ ký vào attachments (server tính lại SHA-256, lưu 3 năm)
+  ac:
+    - Tệp lệch hash bị từ chối, ảnh không được ghi ra log
+T-050:
+  title: Tạo private.check_route_driver_hours() (tính lại trong DB khi công bố tuyến)
+  ac:
+    - Tính riêng từng đoạn lái / nghỉ / chờ / bốc dỡ và thời gian ràng buộc (không chỉ dựa vào tổng giờ)
+    - Vi phạm thì không công bố được, kết quả lưu ở rule_evaluation_events
+T-051:
+  title: Tổng hợp theo ngày ALG-001 (cộng dồn nhiều chuyến của cùng tài xế, D-11)
+  ac:
+    - Cộng mọi chuyến trong cùng ngày làm việc để phán định thời gian ràng buộc và giờ lái
+T-052:
+  title: Cửa sổ thời kỳ ALG-005 (trung bình 2 ngày, trung bình 2 tuần, tháng, năm, ngoài giờ) cài cả TS và SQL
+  ac:
+    - Mỗi dòng DRV-RULE được phán định từ driver_daily_totals
+T-053:
+  title: Không rõ giờ kết thúc ca hôm trước thì chặn công bố vì "thiếu dữ liệu" (thời gian nghỉ tính từ ALG-004)
+  ac:
+    - Không có giờ kết thúc ca hôm trước thì không bỏ qua phán định mà chặn công bố với data_missing
+T-054:
+  title: Tách loại đoạn (lái / nghỉ / chờ / bốc dỡ / work) và sửa nhãn
+  ac:
+    - Đổi chữ 「サービス」 thành 「荷役」 (bốc dỡ), thêm loại work
+T-055:
+  title: Panel cảnh báo (DRV-RULE #4, #5 — cảnh báo 13 giờ / giới hạn 15 giờ) dùng chung với SCR-052, sửa tiêu đề SCR-051
+  ac:
+    - Phân biệt rõ cảnh báo (vẫn công bố được) và vượt giới hạn (không công bố được)
+T-056:
+  title: Test giá trị biên thời gian ràng buộc và giờ lái (mọi dòng DRV-RULE, ADR-0008 Verification)
+  ac:
+    - Test tự động xác nhận ca đúng giới hạn và vượt 1 phút cho từng dòng DRV-RULE
+T-057:
+  title: Sửa ALG-006 tự chèn điểm nghỉ và test với dữ liệu kit (13:20–13:50)
+  ac:
+    - Điểm nghỉ được chèn trước khi chạm giới hạn lái liên tục, khớp kết quả mong đợi của kit
+T-058:
+  title: Bảng driver_rule_versions, backfill v1 từ ADR-0008, bỏ hằng số trong TS
+  ac:
+    - lib/rules nhận phiên bản qua tham số, không giữ giá trị quy tắc trong code
+T-059:
+  title: Bảng khóa giá trị chuẩn theo 告示 và hàm DB từ chối giá trị lỏng hơn chuẩn
+  ac:
+    - Không lưu được phiên bản có giá trị lỏng hơn 告示 (chỉ được siết chặt hơn theo quy định công ty)
+T-060:
+  title: submit_driver_rule_version / approve_driver_rule_version (người tạo ≠ người duyệt)
+  ac:
+    - Người tạo trùng người duyệt thì DB từ chối
+T-061:
+  title: Màn SCR-054 (thẻ phiên bản + bảng so sánh, form 12 dòng, số tuyến tham chiếu và danh sách tuyến bị ảnh hưởng)
+  ac:
+    - Hiển thị danh sách tuyến chạy từ ngày hiệu lực của phiên bản mới trở đi
+T-062:
+  title: driver_events / driver_duty_segments / driver_daily_totals, RPC record_driver_event và ALG-007
+  ac:
+    - Số liệu thực tế được tạo từ sự kiện vận hành trên thiết bị tài xế, không liên kết tachograph số
+T-063:
+  title: Job nạp số lũy kế đầu kỳ (qua staging migration, có kiểm toán)
+  ac:
+    - Chỉ nạp 1 lần lúc go-live, kết quả nạp được ghi kiểm toán
+T-064:
+  title: RPC xin / duyệt điều chỉnh số liệu thực tế (ROLE-004 tạo, ROLE-010 duyệt) và tính lại tổng ngày
+  ac:
+    - Chưa duyệt thì tổng ngày không đổi, sự kiện gốc không bị ghi đè
+T-065:
+  title: Phân loại phán định ALG-008 (cảnh báo / vi phạm) và test
+  ac:
+    - Hai mức phán định ra đúng theo bảng ADR-0008
+T-066:
+  title: Màn SCR-053 (tab kỳ, KPI, danh sách, drawer)
+  ac:
+    - Hiển thị lũy kế ngày / tuần / tháng / năm và thời gian còn lại theo từng tài xế
+T-067:
+  title: Bỏ p_check khỏi RPC công bố, tính lại trong DB, vi phạm thì trả blocked
+  ac:
+    - Không dùng kết quả phán định client gửi lên; vi phạm vẫn để lại sự kiện đánh giá
+T-068:
+  title: Advisory lock theo tài xế và test công bố đồng thời 2 tuyến của cùng tài xế
+  ac:
+    - Công bố đồng thời cũng không để lọt tuyến vượt giới hạn sau khi cộng dồn
+T-069:
+  title: route_versions trỏ FK tới driver_rule_versions, lấy phiên bản theo ngày chạy, trigger cấm sửa sau công bố
+  ac:
+    - Phiên bản đã công bố chỉ được đổi sang superseded
+T-070:
+  title: Tách routes.stops thành route_stops / route_stop_lines (theo phiên bản), bỏ cột fixture
+  ac:
+    - Giờ kế hoạch chuyển sang route_versions và route_segments
+T-071:
+  title: UI SCR-052 (BlockPanel từ rule_evaluation_events, cột lịch sử, câu chữ)
+  ac:
+    - Lịch sử hiển thị phiên bản quy tắc áp dụng lúc công bố và nội dung vi phạm
+T-072:
+  title: driver_incidents (phần khấu trừ là cột riêng cần duyệt, không đổi giá trị gốc) và tách khỏi KPI
+  ac:
+    - Sự cố khách quan như kẹt xe, tai nạn được ghi riêng, không ghi đè số liệu thực tế
+T-073:
+  title: Phát hiện cùng khóa nhưng khác giá trị ("giá trị không khớp") và lưu CSV gốc vào attachments
+  ac:
+    - Dòng cùng khóa khác giá trị thành dòng lỗi, số lượng được ghi vào lịch sử nhập
+T-074:
+  title: UI SCR-070 (dòng meta, nhãn "ngoài phạm vi liên kết live", cột lịch sử, tiêu đề)
+  ac:
+    - Hiển thị logger / phiên bản TZP áp dụng / 「ライブ連携は対象外」 (không liên kết live)
+T-075:
+  title: Tạo private.evaluate_logger_import(), bỏ p_alarms, giờ phát hiện = giờ của transaction nhập
+  ac:
+    - Phán định ngoài dải và mức nghiêm trọng do DB quyết theo ngưỡng có phiên bản, không nhận từ client
+T-076:
+  title: temperature_excursions / excursion_affected_lots, mở hồ sơ sai lệch và cách ly lô trong transaction nhập
+  ac:
+    - Lần nhập có cảnh báo ngoài dải thì hồ sơ sai lệch và việc cách ly lô liên quan được chốt trong cùng transaction
+T-077:
+  title: temperature_policy_zone_thresholds, backfill v1 từ zones, dùng chung resolve_tzp_version(at)
+  ac:
+    - Bỏ zones.min_c / max_c, mọi hàm đánh giá dùng chung một hàm xác định phiên bản
+T-078:
+  title: Cột vòng đời phiên bản, CHECK người tạo ≠ người duyệt, RPC tạo / duyệt / trả lại
+  ac:
+    - Phiên bản chưa duyệt không được dùng để đánh giá
+T-079:
+  title: Chuyển tham số cảnh báo (tiêu chí nghiêm trọng, SLA) sang phiên bản TZP, thêm view đếm số lần đánh giá
+  ac:
+    - Kết quả đánh giá cũ giữ nguyên theo phiên bản lúc đó, không tính lại
+T-080:
+  title: Màn SCR-079 (danh sách phiên bản, form chênh lệch, khung phê duyệt)
+  ac:
+    - So sánh được ngưỡng của 3 dải nhiệt và ngày hiệu lực giữa các phiên bản
+T-081:
+  title: completeness_gaps, panel lịch upload theo ca và job sinh, sinh thiếu hụt từ dòng lỗi
+  ac:
+    - Ca nào (3 lần / ngày) không upload thì sinh bản ghi thiếu và có link sang SCR-075
+T-082:
+  title: Đổi cột thời gian của alarms sang timestamptz, tính SLA từ phiên bản TZP, đưa mức nghiêm trọng vào code_values
+  ac:
+    - SLA 15 phút tính từ giờ phát hiện, mức nghiêm trọng có 2 bậc 重大 (nghiêm trọng) / 警告 (cảnh báo)
+T-083:
+  title: UI SCR-072 (cột giờ phát hiện / giờ đọc và độ trễ, tham chiếu excursion, panel chi tiết, tự làm mới 30 giây, câu chữ)
+  ac:
+    - Độ trễ từ giờ đọc đến giờ phát hiện hiển thị như một chỉ số riêng
+T-084:
+  title: Job kiểm tra quá SLA và gửi email nhắc qua outbox
+  ac:
+    - Cảnh báo quá SLA mà chưa có lần xem xét đầu tiên thì gửi email nhắc (không dùng SMS)
+T-085:
+  title: Thay bằng deviation_case_lots, trigger chỉ INSERT cho deviation_entries, tham chiếu meta excursion
+  ac:
+    - Entry đã ghi không sửa / xóa được
+T-086:
+  title: Lưu tệp bằng chứng sai lệch vào attachments và cấp URL ngắn hạn
+  ac:
+    - Sự kiện kiểm toán được ghi trước khi cấp URL
+T-087:
+  title: Duyệt đóng hồ sơ cho ROLE-010 (chỉ xem + nút duyệt), danh sách người duyệt và thông báo nhờ review
+  ac:
+    - Chỉ người duyệt khác người mở hồ sơ và người điều tra mới đóng được hồ sơ
+T-088:
+  title: UI SCR-074 / SCR-072 (hiển thị bước stepper đang chọn, nhãn giai đoạn, nút "mở hồ sơ sai lệch")
+  ac:
+    - Cảnh báo đã có hồ sơ thì mở hồ sơ có sẵn, không tạo mới
+T-089:
+  title: Đổi searchTrace thành RPC đọc SECURITY DEFINER có kiểm toán, bỏ query mặc định của demo
+  ac:
+    - Mọi lần tra cứu của mọi vai trò được ghi vào sự kiện kiểm toán
+T-090:
+  title: Query truy xuất dùng index và load test 300,000 dòng xuất trên staging (3 năm dữ liệu trong 60 giây)
+  ac:
+    - Với 300,000 dòng xuất + 2,5 triệu bản ghi nhiệt, truy xuất 3 năm xong trong 60 giây
+T-091:
+  title: UI SCR-080 (điểm cuối liên kết, banner người kiểm toán, badge nhóm hàng chịu luật, câu chữ 9 số và trace_status)
+  ac:
+    - Ghi rõ đối tượng truy xuất theo luật chỉ là gạo và bò, SKU khác hiển thị là chính sách nội bộ
+T-092:
+  title: API cấp URL ngắn hạn cho tệp bằng chứng (ghi kiểm toán trước khi cấp) và hộp thoại xác nhận mở hồ sơ
+  ac:
+    - Hộp thoại mở hồ sơ thu hồi hiển thị số lượng sẽ bị cách ly
+T-093:
+  title: Tra theo mã giao dịch gạo và bảng 5 mục giao dịch gạo (hiển thị mục thiếu)
+  ac:
+    - Tra được theo rice_transaction_id, mục thiếu được chỉ rõ
+T-094:
+  title: open_recall_case cách ly tồn kho trong phạm vi ngay trong cùng transaction và ghi lot_events
+  ac:
+    - Mở hồ sơ và cách ly tồn kho được chốt cùng lúc, lý do ghi số hồ sơ
+T-095:
+  title: advance_recall_case (scoped / reconciled / closed, kiểm tra điều kiện ở DB)
+  ac:
+    - Hồ sơ có số lượng đối chiếu không khớp thì không đóng được
+T-096:
+  title: recall_tasks và RPC thêm / hoàn tất (task duyệt hủy có người tạo ≠ người duyệt)
+  ac:
+    - Mỗi task có hạn và người phụ trách
+T-097:
+  title: Đối chiếu bằng recall_scope_lines, view tổng hợp theo hồ sơ, 6 KPI + thẻ đối chiếu số lượng
+  ac:
+    - 2 công thức đối chiếu của kit được tính từ dữ liệu theo từng dòng
+T-098:
+  title: Lấy người nhận thông báo từ liên hệ chính (customer_contacts), hiển thị panel phiên bản thông báo và trạng thái gửi
+  ac:
+    - Thông báo do QA A soạn, QA B (người khác) duyệt rồi mới gửi
+T-099:
+  title: evidence_exports (gói + manifest SHA-256, lệch thì từ chối phát hành) và xuất CSV truy xuất
+  ac:
+    - Bản xuất có manifest không khớp nội dung thì không được phát hành
+    - Từ SCR-082 thì thành yêu cầu xuất gửi người kiểm toán
+T-100:
+  title: contract_versions và backfill v1 (hiệu lực 2026-04-01, giữ AGR-008 / AGR-014 ở trạng thái chưa thiết lập)
+  ac:
+    - Phân bổ dùng phiên bản hợp đồng có hiệu lực tại ngày giao dự kiến
+    - Không điền giá trị mặc định cho AGR-008 / AGR-014
+T-101:
+  title: customer_code_mappings và form tạo bảng đối chiếu mã khách (có phê duyệt)
+  ac:
+    - Chỉ bảng đối chiếu đã duyệt mới được dùng để nối lịch sử đảo ngược ngày
+T-102:
+  title: Xem trước tính cửa sổ giao (hàm chung lib/rules) và ô chọn bằng chứng POD bắt buộc
+  ac:
+    - Màn xem trước dùng cùng hàm tính với phân bổ
+T-103:
+  title: UI SCR-101 (thống nhất nhãn chưa thiết lập, câu chữ tình trạng xác nhận, nút CSV / hàng đợi duyệt / đăng ký mới, quyền xem ROLE-004)
+  ac:
+    - Hợp đồng chưa thiết lập hiển thị 「未設定（business-review）」
+T-104:
+  title: master_change_requests và RPC duyệt có CHECK người tạo ≠ người duyệt (dùng chung cho mọi master)
+  ac:
+    - Thay đổi master như hợp đồng, SKU… chỉ có hiệu lực sau khi được duyệt
+T-105:
+  title: Tách rule_params thành operating_param_versions và các bảng phiên bản có kiểu, gắn 「仮決定 D-xx」 (quyết định tạm) cho v1
+  ac:
+    - Khi khách trả lời chỉ cần thêm phiên bản, không đổi cấu trúc dữ liệu
+T-106:
+  title: Đăng nhập OIDC (bảng đối chiếu nhóm IdP → vai trò), user_sessions, app.session_id theo từng request
+  ac:
+    - Vai trò được quyết định từ nhóm IdP, không đổi vai trò được trong ứng dụng
+T-107:
+  title: Lưu last_seen_at, dùng set_request_context để từ chối phiên quá thời gian rảnh trên thiết bị dock
+  ac:
+    - Thao tác từ thiết bị dock quá giới hạn rảnh bị server từ chối
+T-108:
+  title: devices và Cookie thiết bị (ROLE-009 cấp), kiểm tra thiết bị ở RPC dock và trạng thái thiết bị chưa đăng ký
+  ac:
+    - Thiết bị chưa đăng ký không thao tác dock được
+T-109:
+  title: Policy RLS SELECT theo vai trò theo ma trận ADR-0010 và entity_history()
+  ac:
+    - Bỏ tình trạng đăng nhập là đọc được mọi bảng, giới hạn phạm vi đọc theo vai trò
+T-110:
+  title: Đổi current_app_user / role sang đọc ngữ cảnh app.*, tạo role ycl_app / ycl_batch
+  ac:
+    - Không phụ thuộc auth.uid() của Supabase
+T-111:
+  title: Gỡ chức năng đổi vai trò (set_active_role, menu) khỏi bản production
+  ac:
+    - Bản build production không chứa hàm hay menu đổi vai trò
+T-112:
+  title: Test truy cập theo vai trò (ADR-0010 Verification)
+  ac:
+    - Test tự động xác nhận quyền đọc của 10 vai trò × các bảng chính
+T-113:
+  title: Trigger chỉ INSERT cho mọi bảng sự kiện, script đối chiếu trên CI, thêm session_id / device_code vào audit_events
+  ac:
+    - CI thất bại nếu có bảng sự kiện thiếu trigger
+T-114:
+  title: Kết nối IF-MAP-01 (timeout + cache) và ước lượng thời gian chạy tuyến
+  ac:
+    - Dịch vụ bản đồ không phản hồi thì màn lập tuyến vẫn dùng được
+T-115:
+  title: Bỏ mock_sent, cài retry cho notification_outbox và job gửi qua mail relay
+  ac:
+    - Gửi lỗi được ghi vào attempts / last_error và được gửi lại
+T-116:
+  title: migration_batches / migration_rows / migration_review_decisions và CHECK đối chiếu số lượng
+  ac:
+    - DB bảo đảm số dòng nguồn = ACCEPT + REJECT + DUPLICATE + BUSINESS-REVIEW
+T-117:
+  title: Quy tắc phán định migration (ngày sai, bò 9 số, AGR-008 / AGR-014 không suy đoán mà chuyển BUSINESS-REVIEW)
+  ac:
+    - Ngày trống, YYYY/MM/DD, DD-MM-YYYY, số serial Excel không suy đoán mà chuyển BUSINESS-REVIEW
+    - Không đệm 0 cho mã bò 9 số
+T-118:
+  title: Nền tảng attachments dùng chung (lưu mã hóa trên S3, URL ký ngắn hạn, owner_type)
+  ac:
+    - Tệp được lưu mã hóa, chỉ lấy được qua URL ngắn hạn
+T-119:
+  title: Thay demo_now() bằng giờ server (hiển thị JST, lưu ISO 8601), xóa khóa thời gian dùng cho demo
+  ac:
+    - Production không còn hàm trả về thời gian cố định
+T-120:
+  title: Tách seed / reset thành migration demo/, build production thất bại nếu phát hiện hàm reset
+  ac:
+    - Bản build production không chứa chức năng khởi tạo dữ liệu demo
+T-167:
+  title: Chuyển idempotency_keys sang schema private, thêm expires_at và job dọn khoá hết hạn
+  ac:
+    - Role dùng cho API không đọc được idempotency_keys
+    - Khoá hết hạn bị job định kỳ xoá; gửi lại trong thời hạn vẫn trả cùng kết quả
+T-168:
+  title: Test tải 80 user đồng thời trên staging (kịch bản phân bổ, ghi kiểm hàng nhập, tra cứu truy xuất; đo p95)
+  ac:
+    - Đo với 80 user đồng thời, đọc p95 ≤ 2 giây, ghi p95 ≤ 3 giây, lưu kết quả (không rút về 42 người)
+    - Trong lúc tải, xác nhận phân bổ đồng thời không bị trùng và không deadlock

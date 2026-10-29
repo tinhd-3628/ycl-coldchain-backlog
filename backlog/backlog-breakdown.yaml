@@ -1,0 +1,1119 @@
+# YCL backlog breakdown (LAB-5) — source of truth for GitHub issue creation.
+# Epic = 機能グループ E-xx (WBS LAB-1) / Issue = Story E-xx-Syy / Sub-issue = task 1–3 days.
+# Scope: delta to-be vs as-built of the 18 LAB-4 core screens + shared foundation (ADR / GAP P0-P1).
+# refs: DLT-* = LAB4/specs/design/screens/*/spec.md §Delta, GAP-* = LAB4/specs/database/prototype-vs-design-gap.md
+# layer: db | api | ui | batch | test   hours: direct bottom-up estimate (8h = 1 day)
+# constraint: driver-hours-2024 marks items driven by 改善基準告示 (2024年4月改正) — kept separate on purpose.
+# milestones: simulated UAT releases (LAB-5 exercise dates). scope = whole epic ID or single story ID;
+#   every story must resolve to exactly one milestone, and depends must not point to a later milestone.
+
+milestones:
+  - key: UAT1
+    title: UAT 1st (2026/12/01)
+    due: 2026-12-01
+    description: |
+      基盤・認証/権限・マスター・入荷検品・引当ルールエンジン・移行判定
+      Nền tảng, xác thực/phân quyền, master, kiểm hàng nhập, engine quy tắc phân bổ, phán định migration
+      ※ LAB-5 演習用の仮想日程 / Lịch giả lập cho LAB-5
+    scope: [E-24, E-21, E-20, E-23, E-08-S01, E-13-S03, E-02-S01, E-02-S02, E-02-S04, E-02-S06]
+  - key: UAT2
+    title: UAT 2nd (2027/01/05)
+    due: 2027-01-05
+    description: |
+      一時温度帯・ロット生成・期限/引当・ピッキング・出荷確定・ルート計画とドライバー労働時間（2024 年規制）
+      Dải nhiệt tạm thời, tạo lô, hạn dùng/phân bổ, lấy hàng, xác nhận xuất, lập tuyến và giờ làm tài xế (quy định 2024)
+      ※ LAB-5 演習用の仮想日程 / Lịch giả lập cho LAB-5
+    scope: [E-02-S03, E-02-S05, E-06, E-08-S02, E-09, E-11, E-12, E-22-S02]
+  - key: UAT3
+    title: UAT 3rd (2027/02/02)
+    due: 2027-02-02
+    description: |
+      配送完了（POD オフライン）・温度ロガー/アラーム/逸脱・ロット隔離・トレース・回収・監査エビデンス・メール通知
+      Hoàn tất giao (POD ngoại tuyến), logger nhiệt/cảnh báo/sai lệch, cách ly lô, truy xuất, thu hồi, bằng chứng kiểm toán, email
+      ※ LAB-5 演習用の仮想日程 / Lịch giả lập cho LAB-5
+    scope: [E-02-S07, E-03, E-10, E-13-S01, E-13-S02, E-13-S04, E-14, E-16, E-17, E-19, E-22-S03]
+
+# sprints: 2-week iterations (Project field "Iteration"); each milestone is built in the two sprints
+#   before its UAT date. Tasks are placed and backend PICs balanced by backlog_sprint_planner.py.
+sprint_duration_days: 14
+sprint_capacity_hours: 70  # per person per sprint: 10 days x 8h minus ~10% for meetings / review
+sprints:
+  - {title: Sprint 1, start: 2026-11-02, milestone: UAT1}
+  - {title: Sprint 2, start: 2026-11-16, milestone: UAT1}
+  - {title: Sprint 3, start: 2026-11-30, milestone: UAT2}
+  - {title: Sprint 4, start: 2026-12-14, milestone: UAT2}
+  - {title: Sprint 5, start: 2027-01-04, milestone: UAT3}  # 2026-12-28..2027-01-03 年末年始 break
+  - {title: Sprint 6, start: 2027-01-18, milestone: UAT3}
+
+epics:
+  - id: E-02
+    title: 入荷検品・受入判定
+    stories:
+      - id: E-02-S01
+        title: 入荷検品記録
+        screens: [SCR-014]
+        tasks:
+          - title: GS1-128 パーサー拡張（AI 11/15）と GTIN・SKU 照合、数量初期値の廃止
+            layer: ui
+            refs: [DLT-014-05, DLT-014-08, D-09]
+            hours: 12
+            ac:
+              - AI 01/10/11/15/17 を読み取り、数量以外の項目を自動入力する
+              - GTIN が明細の SKU と一致しない場合は入力エラーとする
+              - 数量欄は空欄で開始し、予定数量はヒントとしてのみ表示する
+          - title: 製造日（E13）入力と inbound_lines.mfg_source 追加、seed の製造日推定を廃止
+            layer: db
+            refs: [DLT-014-04, GAP-011]
+            hours: 10
+            ac:
+              - 製造日の取得元（GS1-128 / ラベル / 手入力）が mfg_source に残る
+              - seed / 移行でロット番号から製造日を推定しない
+      - id: E-02-S02
+        title: 入荷時温度帯照合
+        screens: [SCR-014]
+        tasks:
+          - title: record_inspection を版付き温度帯ポリシー閾値（resolve_tzp_version）参照に変更
+            layer: db
+            refs: [DLT-014-01, GAP-001, ADR-0005]
+            hours: 10
+            depends: [E-13-S03]
+            ac:
+              - 閾値は測定時刻に有効な TZP 版から取得し、コード内定数を使わない
+              - 有効な版がない場合は確定を阻止する
+          - title: 温度帯不一致を blocked 判定に変更し rule_evaluation_events を記録（intent 付き API）
+            layer: db
+            refs: [DLT-014-02, DLT-014-03, ADR-0004]
+            hours: 14
+            depends: [E-08-S01]
+            ac:
+              - 帯域外の温度は警告ではなく blocked となり、確定できない
+              - 判定ごとに rule_evaluation_events が 1 行記録される
+      - id: E-02-S03
+        title: 一時温度帯申請・承認
+        screens: [SCR-016]
+        tasks:
+          - title: temp_zone_requests テーブルと申請・承認・取下げ RPC / route handler（zod）
+            layer: db
+            refs: [DLT-016-02, DLT-016-03, GAP-015, ADR-0002]
+            hours: 20
+            ac:
+              - 申請者と承認者が同一の場合は DB で拒否する
+              - 3 つの RPC は route handler（セッション → ロール → zod）経由のみで呼べる
+          - title: evaluate_zone_match が有効な一時温度帯申請を参照し rule_refs に申請 ID を記録
+            layer: db
+            refs: [DLT-016-04, ADR-0004, ADR-0005]
+            hours: 8
+            ac:
+              - 期限内・承認済みの申請だけが判定に反映される
+          - title: SCR-016 画面（承認待ちキュー＋詳細の 2 カラム）
+            layer: ui
+            refs: [DLT-016-01, options/SCR-016 案A]
+            hours: 20
+            ac:
+              - ApprovalPanel / BlockPanel を再利用し、ワイヤーフレーム案 A の状態をすべて表示する
+          - title: 一時温度帯申請の期限切れジョブとタスク受信箱「一時温度帯 承認待ち」
+            layer: batch
+            refs: [DLT-016-05, F-098]
+            hours: 10
+            ac:
+              - 期限切れの申請は自動で expired になり、判定に使われない
+              - 承認者のタスク受信箱に承認待ち件数が表示される
+      - id: E-02-S04
+        title: 受入・拒否・保留数量と理由コード
+        screens: [SCR-015]
+        tasks:
+          - title: submit_inbound_acceptance で問題行の受入数量 0 チェックと受入ステッパーのロック
+            layer: db
+            refs: [DLT-015-01, BR-TEMP-02]
+            hours: 8
+            ac:
+              - 温度帯不一致・牛 9 桁の行は受入数量 > 0 で確定できない
+          - title: 受入確定時の温度帯再評価と差異承認ロールの修正
+            layer: db
+            refs: [DLT-015-06, DLT-015-03, DLT-015-07, ADR-0004]
+            hours: 10
+            ac:
+              - finalize_inbound_acceptance 内で evaluate_zone_match を再実行する
+              - 承認依頼先に作成者を初期値として入れない
+      - id: E-02-S05
+        title: ロット・在庫ユニット生成
+        screens: [SCR-015]
+        tasks:
+          - title: to-be ロット列（trace_status・米トレース項目分割・supplier_lot・received_at）と記録処理
+            layer: db
+            refs: [DLT-015-04, GAP-012, GAP-014]
+            hours: 14
+            ac:
+              - lots.rice を rice_origin / rice_transaction_id に分割し、トレース用索引 IDX-03..06 を作成する
+              - 牛 9 桁のロットは trace_status = business_review で作成される
+          - title: ロットラベル印刷（タブレット用レイアウト）と印刷監査 API
+            layer: ui
+            refs: [DLT-015-02, D-09]
+            hours: 16
+            ac:
+              - 受入確定時にロットラベルを印刷でき、印刷ごとに監査イベントが残る
+      - id: E-02-S06
+        title: 規制トレース項目の入力・検証
+        screens: [SCR-014]
+        tasks:
+          - title: 米トレース項目（E18）入力と record_inspection の必須チェック
+            layer: db
+            refs: [DLT-014-06, BR-TRACE-01]
+            hours: 10
+            ac:
+              - 米レーンの SKU は必須項目が欠けると確定できない
+          - title: 牛個体識別番号の検証（9 桁 = 業務レビュー警告・ゼロ埋め禁止 / その他桁数 = 入力エラー）
+            layer: db
+            refs: [BR-TRACE-02, Q-new-18, PREMISE §4.6]
+            hours: 8
+            ac:
+              - 9 桁は受け付けた値のまま記録し、ゼロ埋めしない
+              - 9 桁・10 桁以外、または数字以外を含む場合は入力エラー
+      - id: E-02-S07
+        title: 検品不合格時の自動隔離
+        screens: [SCR-015]
+        tasks:
+          - title: 受入から逸脱ケースを起票する際に deviation_case_lots を記録
+            layer: db
+            refs: [DLT-015-05, GAP-051]
+            hours: 8
+            ac:
+              - 逸脱ケースと対象ロットが外部キーで結ばれる（ロット番号配列を使わない）
+
+  - id: E-03
+    title: ロット・在庫状態管理
+    stories:
+      - id: E-03-S01
+        title: ロット状態遷移制御
+        screens: [SCR-025]
+        tasks:
+          - title: lot_events の INSERT 専用トリガーと判定時の deviation_case_lots 更新
+            layer: db
+            refs: [DLT-025-04, GAP-067, ADR-0003]
+            hours: 8
+            ac:
+              - lot_events への UPDATE / DELETE は DB で拒否される
+      - id: E-03-S02
+        title: 隔離・解除・廃棄判定
+        screens: [SCR-025]
+        tasks:
+          - title: decide_quarantine で trace_status = business_review のロット解除を阻止（牛 9 桁）
+            layer: db
+            refs: [DLT-025-01, GAP-012]
+            priority: P0
+            hours: 8
+            ac:
+              - 10 桁の個体識別番号が確認されるまで解除できない
+          - title: decide_quarantine で未クローズ回収ケース対象ロットの解除を blocked（廃棄は可）
+            layer: db
+            refs: [DLT-025-08, GAP-071, ADR-0004]
+            priority: P0
+            hours: 12
+            ac:
+              - 解除は blocked + rule_evaluation_events + 監査を残し、RAISE しない
+              - 廃棄は回収ケース中でも実行できる
+          - title: 隔離判定のエビデンス添付アップロード
+            layer: api
+            refs: [DLT-025-02, TBC-83]
+            hours: 8
+            depends: [E-24-S03]
+            ac:
+              - attachments（owner_type = lot_event）に保存され、判定イベントから参照できる
+          - title: SCR-025 UI（2 カラム化・自動隔離ロット表示・回収 BlockPanel・文言・サーバー日付）
+            layer: ui
+            refs: [DLT-025-03, DLT-025-05, DLT-025-06, DLT-025-07]
+            hours: 16
+            ac:
+              - アラーム起因の自動隔離ロットに理由と隔離時刻が表示される
+              - 回収ケース中のロットは BlockPanel で解除不可の理由を示す
+
+  - id: E-06
+    title: 期限・引当ルール
+    stories:
+      - id: E-06-S02
+        title: 配送ウィンドウ判定
+        screens: [SCR-033]
+        tasks:
+          - title: 配送ウィンドウ判定 ④ に納品予定日を渡す（参照元の確定と TS / SQL 両方の修正）
+            layer: db
+            refs: [DLT-033-05, D-01, QA-021]
+            hours: 8
+            ac:
+              - 判定は出荷日ではなく納品予定日で行う
+              - 消費期限 SKU はハードストップ判定を先に行い、その後ウィンドウを判定する
+      - id: E-06-S03
+        title: 日付逆転禁止チェック
+        screens: [SCR-034]
+        tasks:
+          - title: 日付逆転の比較基準を顧客×SKU 単位で DB 取得し、旧↔新顧客コード対応表で履歴を連結
+            layer: db
+            refs: [DLT-034-05, GAP-006, GAP-024, ADR-0006]
+            hours: 12
+            depends: [E-20-S02]
+            ac:
+              - 比較対象は同じ顧客×SKU の受領済み配送行のうち受領時刻が最新のもの（今日の日付とは比較しない）
+              - 他の顧客の履歴は使わない。コード変更は承認済み対応表がある場合のみ連結する
+          - title: POD 未同期・移行 BUSINESS_REVIEW 行の件数クエリ（SCR-034 警告用）
+            layer: db
+            refs: [DLT-034-04, Q-new-04, Q-new-05]
+            hours: 8
+            ac:
+              - 顧客×SKU ごとに未同期 POD 件数と移行レビュー中件数を返す
+      - id: E-06-S05
+        title: 引当判定エビデンス表示
+        screens: [SCR-034]
+        tasks:
+          - title: SCR-034 ローダーを rule_evaluation_events 参照に変更し、DB 結論・verdict_mismatch・ルール版を表示
+            layer: ui
+            refs: [DLT-034-01, DLT-034-02, DLT-034-08, ADR-0004, ADR-0005]
+            hours: 16
+            depends: [E-08-S01]
+            ac:
+              - 画面の結論は DB の評価結果を表示し、クライアント計算を使わない
+              - 評価時のルール版が表示される
+          - title: SCR-034 UI（期限種別カード分離・未設定ラベル統一・ROLE-010 閲覧）
+            layer: ui
+            refs: [DLT-034-07, DLT-034-09, DLT-034-10, GAP-010]
+            hours: 8
+            ac:
+              - 賞味期限（警告）と消費期限（ハードストップ）が別表示で区別できる
+      - id: E-06-S06
+        title: 納品履歴（受領済み配送行）管理
+        screens: [SCR-034, SCR-062]
+        tasks:
+          - title: delivery_outcome_events を追加し delivery_history の状態を同一トランザクションで更新
+            layer: db
+            refs: [DLT-034-03, GAP-023, ADR-0006, D-06]
+            hours: 16
+            ac:
+              - 受領拒否・全量返品の行は比較対象から外れ、一部返品の行は残る
+          - title: 配送完了時の日単位集約を廃止し POD 単位で重複を防止
+            layer: db
+            refs: [DLT-062-13, GAP-027]
+            hours: 8
+            ac:
+              - 同日複数便は受領時刻の遅い方が比較基準になる
+
+  - id: E-08
+    title: 引当・ピッキング・積込
+    stories:
+      - id: E-08-S01
+        title: 原子的引当
+        screens: [SCR-033, SCR-034]
+        tasks:
+          - title: rule_evaluation_events テーブルと共通記録ヘルパー（blocked を返してイベントを確定、RAISE しない）
+            layer: db
+            refs: [GAP-022, DLT-033-03, ADR-0004]
+            priority: P0
+            hours: 12
+            ac:
+              - ハード制約に違反しても評価イベントはコミットされる
+          - title: 引当制約チェック SQL 関数（① 消費期限 ② 温度帯 ③ トレース状態 ④ 配送ウィンドウ ⑤ 日付逆転）を commit_allocation_core 内で実行
+            layer: db
+            refs: [DLT-033-01, DLT-033-06, GAP-020, ADR-0004]
+            priority: P0
+            hours: 24
+            ac:
+              - 5 つの制約を同一トランザクション内で再検証し、比較基準 comparison_delivery_id を保存する
+          - title: 契約版の参照（未設定 = 業務レビュー、D-02 承認なしは引当しない）とクライアント結論の受け取り廃止
+            layer: db
+            refs: [DLT-033-02, GAP-019, D-02]
+            priority: P0
+            hours: 12
+            depends: [E-20-S02]
+            ac:
+              - AGR-008 / AGR-014 に既定ルール（1/3 等）を自動適用しない
+          - title: lock_timeout と 409「混雑」マッピング、lots.qty_reserved と CHECK 制約
+            layer: db
+            refs: [DLT-033-07, GAP-026, GAP-013, ADR-0007]
+            hours: 10
+            ac:
+              - 同一ロットへの同時引当で二重引当が発生しない
+          - title: allocations にルール版キーと比較基準を追加し、業務レビュー承認時に制約を再チェック
+            layer: db
+            refs: [DLT-033-08, DLT-034-06, DLT-034-11, GAP-025]
+            hours: 10
+            ac:
+              - decide_business_review は check_allocation_constraints を再実行する
+              - 申請期限はシステム時刻で判定する
+          - title: 引当データ読込を顧客×SKU 単位に変更し 300,000 出荷行で EXPLAIN 計測
+            layer: db
+            refs: [DLT-033-04, GAP-024, NFR-PERF-01]
+            hours: 12
+            ac:
+              - 部分索引 IDX-01 を使う実行計画を確認し、計測結果を残す
+          - title: 引当ハード制約の境界値テスト（消費期限当日・前日、同日複数便、未設定契約、同時引当）
+            layer: test
+            refs: [ADR-0004 Verification, ADR-0007 Verification]
+            hours: 16
+            ac:
+              - 各制約で通過 / blocked の境界ケースが自動テストで確認される
+          - tid: T-168  # added 2026-10-29 after Sprint 1 (NFR-PERF-01 load test was missed in the first breakdown)
+            not_before: Sprint 2
+            title: ステージングで 80 ユーザー同時の負荷テスト（引当・検品登録・トレース検索のシナリオ、p95 計測）
+            layer: test
+            refs: [NFR-PERF-01, PREMISE §4.5, ADR-0007]
+            hours: 16
+            ac:
+              - 80 ユーザー同時で読取 p95 2 秒以内・書込 p95 3 秒以内を計測し、結果を残す（42 名に縮小しない）
+              - 同時引当で二重引当・デッドロックが発生しないことを負荷中に確認する
+      - id: E-08-S02
+        title: ピッキングタスク生成
+        screens: [SCR-033]
+        tasks:
+          - title: SCR-033 UI（要対応 3 パネル・業務レビュー申請期限カウントダウン・契約列・判定内訳展開行）
+            layer: ui
+            refs: [DLT-033-09, DLT-033-10, DLT-033-12, DLT-033-13]
+            hours: 16
+            ac:
+              - 業務レビュー行に申請期限（出荷前日 15:00）までの残り時間が表示される
+          - title: 「ピッキングタスクを生成」・CSV 出力ボタンと監査付き CSV エンドポイント
+            layer: api
+            refs: [DLT-033-11, NFR-AUD-01]
+            hours: 10
+            ac:
+              - CSV 出力ごとに監査イベントが残る
+
+  - id: E-09
+    title: 出荷前検査・出荷確定
+    stories:
+      - id: E-09-S02
+        title: 出荷確定・ディスパッチ
+        screens: [SCR-033]
+        tasks:
+          - title: confirm_dispatch でロット取得後に消費期限・隔離・trace_status を再チェック
+            layer: db
+            refs: [GAP-021, DLT-033-06, ADR-0004]
+            priority: P0
+            hours: 12
+            ac:
+              - 引当後に期限切れ・隔離・トレース未確定となったロットは出荷確定できず、評価イベントが残る
+
+  - id: E-10
+    title: 配送完了（POD）・クレーム
+    stories:
+      - id: E-10-S01
+        title: 配送完了記録（POD）
+        screens: [SCR-062]
+        tasks:
+          - title: POD 記録を route_stops / route_stop_lines 参照に変更
+            layer: db
+            refs: [DLT-062-14, GAP-035]
+            hours: 10
+            depends: [E-12-S01]
+            ac:
+              - complete_delivery は版付きの停車地・明細テーブルから読む
+          - title: 受取人氏名を pod_recipients に分離し、エビデンスチェック関数を更新
+            layer: db
+            refs: [DLT-062-07, GAP-041, D-15]
+            hours: 8
+            ac:
+              - pods にはキーとハッシュのみを残し、氏名は 3 年保持の別表に置く
+          - title: SCR-062 UI（ボトムナビ・離脱防止・タイトル・デモ要素削除）とルート所有者チェック
+            layer: ui
+            refs: [DLT-062-11, DLT-062-12, DLT-062-17, ADR-0010]
+            hours: 12
+            ac:
+              - 担当外ドライバーのルートは画面・RLS の両方で読めない
+      - id: E-10-S02
+        title: 配送条件別エビデンス判定
+        screens: [SCR-062]
+        tasks:
+          - title: 例外コードのリスト化と必須証跡セット（EX-05 温度計写真を含む）、契約別 POD 必須証跡の参照
+            layer: db
+            refs: [DLT-062-08, DLT-062-09, D-03, QA-003]
+            hours: 12
+            ac:
+              - 車上渡し / 軒先渡し・例外コードごとに必須証跡が契約版から決まる
+          - title: 荷台温度の閾値を版付き温度帯ポリシーから参照
+            layer: db
+            refs: [DLT-062-10, ADR-0005]
+            hours: 6
+            depends: [E-13-S03]
+            ac:
+              - 冷蔵・冷凍便で到着時温度が帯域外の場合は EX-05 と写真が必須になる
+          - title: 端末位置と配送先ジオフェンスのサーバー照合（範囲外は警告＋配車担当へのフラグ）
+            layer: db
+            refs: [DLT-062-05, GAP-042, Q-new-21, D-03]
+            hours: 12
+            ac:
+              - 位置は POD 取得時点のみ使い、住所や連続 GPS を保存しない
+              - 範囲外・位置不明でも完了でき、location_match とフラグが残る
+      - id: E-10-S03
+        title: POD オフラインキュー
+        screens: [SCR-062]
+        tasks:
+          - title: PWA の暗号化キュー（Service Worker + IndexedDB、AES-GCM）と Cookie スイッチの廃止
+            layer: ui
+            refs: [DLT-062-01, GAP-038, ADR-0012]
+            hours: 24
+            ac:
+              - オフライン時の POD は端末内で暗号化保存され、平文で残らない
+          - title: 公開済み運行表パッケージのオフラインキャッシュ（オフラインで SCR-062 を開ける）
+            layer: ui
+            refs: [DLT-062-02, NFR-AVL-02]
+            hours: 16
+            ac:
+              - 機内モードで当日の運行表と SCR-062 が開ける
+          - title: pods.client_pod_id（UNIQUE）＋ content_sha256 と冪等な一括受信 RPC
+            layer: db
+            refs: [DLT-062-03, GAP-038, GAP-028]
+            hours: 12
+            ac:
+              - 同じ POD を再送しても 1 件だけ記録され、前回の結果が返る
+          - title: 自動同期（オンライン復帰・起動時）、完了メッセージ修正、キュー上限 6h 警告 / 8h
+            layer: ui
+            refs: [DLT-062-04, DLT-062-15, GAP-039]
+            hours: 14
+            ac:
+              - 未同期 6 時間で警告、8 時間で上限表示となる
+          - title: 登録端末との紐付けと他ドライバー記録の同期拒否
+            layer: api
+            refs: [DLT-062-16, GAP-008, Q-new-17]
+            hours: 10
+            depends: [E-21-S02]
+            ac:
+              - ログイン中ドライバー以外の記録は同期時に拒否される
+      - id: E-10-S04
+        title: POD エビデンス管理
+        screens: [SCR-062]
+        tasks:
+          - title: 写真・署名を attachments に保存（サーバーで SHA-256 を再計算、3 年保持）
+            layer: api
+            refs: [DLT-062-06, GAP-040, D-15]
+            hours: 12
+            depends: [E-24-S03]
+            ac:
+              - ハッシュ不一致のファイルは受け付けない。画像はログに出力しない
+
+  - id: E-11
+    title: ルート計画・拘束時間チェック
+    constraint: driver-hours-2024
+    stories:
+      - id: E-11-S02
+        title: 拘束時間・運転時間の制約チェック
+        screens: [SCR-051]
+        tasks:
+          - title: private.check_route_driver_hours() の作成（ルート公開時に DB で再計算）
+            layer: db
+            refs: [DLT-051-01, GAP-029, ADR-0004, ADR-0008]
+            priority: P0
+            hours: 24
+            ac:
+              - 運転・休憩・待機・荷役の区間と拘束時間を別々に計算する（合計時間だけで判定しない）
+              - 違反時は公開不可、結果は rule_evaluation_events に残る
+          - title: ALG-001 日単位集計（同一ドライバー複数便の合算、D-11）
+            layer: db
+            refs: [DLT-051-04, GAP-032, D-11]
+            priority: P0
+            hours: 20
+            depends: [E-11-S05]
+            ac:
+              - 同じ勤務日の全便を合算して拘束時間・運転時間を判定する
+          - title: ALG-005 期間ウィンドウ（2 日平均・2 週平均・月・年・時間外）を TS / SQL 両方に実装
+            layer: db
+            refs: [DLT-051-02, GAP-030, ADR-0008 DRV-RULE]
+            priority: P0
+            hours: 24
+            ac:
+              - DRV-RULE の各行が driver_daily_totals から判定される
+          - title: 前日終業不明時は「データ不足」で公開阻止（休息は ALG-004 から算出）
+            layer: db
+            refs: [DLT-051-03, DLT-051-09, GAP-031]
+            priority: P0
+            hours: 10
+            ac:
+              - 前日の終業時刻がない場合、判定をスキップせず data_missing で公開を止める
+          - title: 区間種別の分離（運転 / 休憩 / 待機 / 荷役 / work）とラベル修正
+            layer: db
+            refs: [DLT-051-05, ADR-0008]
+            hours: 6
+            ac:
+              - 「サービス」表記を「荷役」に変更し、work 区分を追加する
+          - title: 警告パネル（DRV-RULE #4・#5：13 時間警告 / 15 時間上限）を SCR-052 と共通化し、SCR-051 タイトルを修正
+            layer: ui
+            refs: [DLT-051-08, DLT-051-11, ADR-0008, Q-new-10]
+            hours: 8
+            ac:
+              - 警告は公開可能、上限超過は公開不可として区別表示する
+          - title: 拘束時間・運転時間の境界値テスト（DRV-RULE 全行、ADR-0008 Verification）
+            layer: test
+            refs: [ADR-0008 Verification]
+            hours: 16
+            ac:
+              - DRV-RULE 各行で上限ちょうど・1 分超過のケースが自動テストで確認される
+      - id: E-11-S03
+        title: 休憩ポイント自動挿入
+        screens: [SCR-051]
+        tasks:
+          - title: ALG-006 休憩自動挿入の修正とキットデータ（13:20–13:50）でのテスト
+            layer: db
+            refs: [DLT-051-06, ADR-0008]
+            hours: 10
+            ac:
+              - 連続運転の上限前に休憩が挿入され、キットの期待値と一致する
+      - id: E-11-S04
+        title: ドライバー規則版管理
+        screens: [SCR-054]
+        tasks:
+          - title: driver_rule_versions テーブルと ADR-0008 からの v1 バックフィル、TS 定数の廃止
+            layer: db
+            refs: [DLT-054-02, DLT-051-07, GAP-003, ADR-0005]
+            hours: 16
+            ac:
+              - lib/rules は版を引数で受け取り、コード内にルール値を持たない
+          - title: 告示基準値ロック表と、基準より緩い値を拒否する DB 関数
+            layer: db
+            refs: [DLT-054-03, ADR-0008]
+            hours: 10
+            ac:
+              - 告示より緩い値の版は保存できない（社内規程で厳しくすることのみ可）
+          - title: submit_driver_rule_version / approve_driver_rule_version（作成者 ≠ 承認者）
+            layer: db
+            refs: [DLT-054-04, ADR-0005]
+            hours: 10
+            ac:
+              - 作成者と承認者が同じ場合は DB で拒否される
+          - title: SCR-054 画面（版カード＋比較表・12 行フォーム・参照ルート数と影響ルート一覧）
+            layer: ui
+            refs: [DLT-054-01, DLT-054-05, DLT-054-06, DLT-054-07, options/SCR-054 案B]
+            hours: 24
+            ac:
+              - 新版の有効日以降に運行するルートの一覧が表示される
+      - id: E-11-S05
+        title: 拘束時間実績集計
+        screens: [SCR-053]
+        tasks:
+          - title: driver_events / driver_duty_segments / driver_daily_totals と record_driver_event RPC・ALG-007
+            layer: db
+            refs: [DLT-053-02, GAP-032, D-12]
+            priority: P0
+            hours: 24
+            ac:
+              - 実績はドライバー端末の運行イベントから作られ、デジタコとは連携しない
+          - title: 期首累計の取込ジョブ（移行ステージング経由・監査付き）
+            layer: batch
+            refs: [DLT-053-03, D-12]
+            hours: 10
+            depends: [E-23-S02]
+            ac:
+              - go-live 時に 1 回だけ取り込み、取込結果が監査に残る
+          - title: 実績補正の申請・承認 RPC（ROLE-004 作成・ROLE-010 承認）と日次合計の再計算
+            layer: db
+            refs: [DLT-053-04, GAP-033, QA-005, Q-new-12]
+            hours: 12
+            ac:
+              - 承認されるまで日次合計は変わらず、元のイベントは書き換えない
+          - title: ALG-008 判定区分（警告 / 違反）とテスト
+            layer: db
+            refs: [DLT-053-06, ADR-0008]
+            hours: 10
+            ac:
+              - 2 段階の判定が ADR-0008 の表どおりに出る
+          - title: SCR-053 画面（期間タブ・KPI・一覧・ドロワー）
+            layer: ui
+            refs: [DLT-053-01, DLT-053-07, options/SCR-053 案A]
+            hours: 24
+            ac:
+              - 日・週・月・年の累計と残り時間がドライバー別に表示される
+
+  - id: E-12
+    title: ルート公開・運行管理
+    constraint: driver-hours-2024
+    stories:
+      - id: E-12-S01
+        title: ルート公開・版管理
+        screens: [SCR-052]
+        tasks:
+          - title: 公開 RPC から p_check を廃止し DB で再計算、違反時は blocked を返却
+            layer: db
+            refs: [DLT-052-01, DLT-052-02, GAP-029]
+            priority: P0
+            hours: 12
+            depends: [E-11-S02]
+            ac:
+              - クライアントが送った判定結果は使わない。違反時も評価イベントが残る
+          - title: ドライバー単位の advisory lock と同一ドライバー 2 ルート同時公開のテスト
+            layer: db
+            refs: [DLT-052-03, ADR-0008]
+            hours: 8
+            ac:
+              - 同時公開しても合算後の上限超過ルートは公開されない
+          - title: route_versions を driver_rule_versions の FK に変更、運行日基準の版取得、公開後の変更禁止トリガー
+            layer: db
+            refs: [DLT-052-04, DLT-052-07, GAP-003, GAP-037]
+            hours: 10
+            depends: [E-11-S04]
+            ac:
+              - 公開済みの版は superseded への変更以外を受け付けない
+          - title: routes.stops を route_stops / route_stop_lines に分離（版単位）し、fixture 列を廃止
+            layer: db
+            refs: [GAP-035, GAP-036]
+            hours: 16
+            ac:
+              - 計画時刻は route_versions と route_segments に移る
+          - title: SCR-052 UI（rule_evaluation_events からの BlockPanel・履歴列・文言）
+            layer: ui
+            refs: [DLT-052-05, DLT-052-06, DLT-052-08]
+            hours: 12
+            ac:
+              - 公開時に適用したルール版と違反内容が履歴に表示される
+      - id: E-12-S04
+        title: 異常事象記録
+        screens: [SCR-053]
+        tasks:
+          - title: driver_incidents（控除分は承認付きの別列、元の値は変更しない）と KPI からの分離
+            layer: db
+            refs: [DLT-053-05, GAP-034, FR-SCH-05]
+            hours: 12
+            ac:
+              - 渋滞・事故等の客観的事象は別記録され、実績値そのものは書き換えない
+
+  - id: E-13
+    title: 温度データ取込・評価
+    stories:
+      - id: E-13-S01
+        title: ロガー CSV 取込
+        screens: [SCR-070]
+        tasks:
+          - title: 重複キーの値不一致検出（「値の不一致」）と元 CSV の attachments 保存
+            layer: db
+            refs: [DLT-070-03, DLT-070-04, GAP-044, GAP-048]
+            hours: 10
+            depends: [E-24-S03]
+            ac:
+              - 同じキーで値が違う行はエラー行になり、件数が取込履歴に残る
+          - title: SCR-070 UI（メタ行・ライブ連携対象外ラベル・履歴列・タイトル）
+            layer: ui
+            refs: [DLT-070-07, DLT-070-08, DLT-070-10]
+            hours: 8
+            ac:
+              - ロガー / 適用 TZP 版 / 「ライブ連携は対象外」が表示される
+      - id: E-13-S02
+        title: 温度読み取り評価
+        screens: [SCR-070, SCR-074]
+        tasks:
+          - title: private.evaluate_logger_import() の作成、p_alarms 廃止、検知時刻を取込トランザクションの時刻に
+            layer: db
+            refs: [DLT-070-01, DLT-070-09, GAP-045, ADR-0009]
+            priority: P0
+            hours: 16
+            ac:
+              - 帯域外判定と重大度は DB が版付き閾値で決め、クライアントから受け取らない
+          - title: temperature_excursions / excursion_affected_lots と取込トランザクション内の逸脱起票・ロット隔離
+            layer: db
+            refs: [DLT-070-02, DLT-074-02, GAP-046, GAP-047]
+            priority: P0
+            hours: 20
+            ac:
+              - 帯域外のアラームが出た取込では、逸脱ケースと対象ロットの隔離が同じトランザクションで確定する
+      - id: E-13-S03
+        title: 温度帯ポリシー版管理
+        screens: [SCR-079]
+        tasks:
+          - title: temperature_policy_zone_thresholds と zones からの v1 バックフィル、resolve_tzp_version(at) の共通化
+            layer: db
+            refs: [DLT-079-02, DLT-079-04, GAP-001, ADR-0005]
+            hours: 16
+            ac:
+              - zones.min_c / max_c を廃止し、全評価関数が同じ版解決関数を使う
+          - title: 版のライフサイクル列と作成者 ≠ 承認者 CHECK、作成・承認・差戻し RPC
+            layer: db
+            refs: [DLT-079-03, ADR-0005]
+            hours: 12
+            ac:
+              - 承認前の版は評価に使われない
+          - title: アラームパラメータ（重大基準・SLA）を TZP 版へ移行し、評価件数ビューを追加
+            layer: db
+            refs: [DLT-079-05, DLT-079-06, D-04]
+            hours: 10
+            ac:
+              - 過去の評価は当時の版のまま再計算されない
+          - title: SCR-079 画面（版一覧・差分フォーム・承認枠）
+            layer: ui
+            refs: [DLT-079-01, options/SCR-079 案A]
+            hours: 20
+            ac:
+              - 3 温度帯の閾値と有効日を版ごとに比較できる
+      - id: E-13-S04
+        title: 記録欠落検知（completeness queue）
+        screens: [SCR-070]
+        tasks:
+          - title: completeness_gaps とシフト別アップロード予定パネル・生成ジョブ、エラー行からの欠落生成
+            layer: batch
+            refs: [DLT-070-05, DLT-070-06, GAP-049]
+            hours: 16
+            ac:
+              - シフト（1 日 3 回）のアップロードがない場合に欠落が作られ、SCR-075 へのリンクが出る
+
+  - id: E-14
+    title: アラーム・逸脱管理
+    stories:
+      - id: E-14-S01
+        title: アラームキュー
+        screens: [SCR-072]
+        tasks:
+          - title: alarms の時刻列を timestamptz 化し、SLA を TZP 版から計算、重大度を code_values へ
+            layer: db
+            refs: [DLT-072-01, DLT-072-02, GAP-043, GAP-009, D-04]
+            hours: 12
+            ac:
+              - SLA 15 分は検知時刻から計算し、重大度は 重大 / 警告 の 2 段階
+          - title: SCR-072 UI（検知 / 読取列と検知遅延・excursion 参照・詳細パネル・30 秒自動更新・文言）
+            layer: ui
+            refs: [DLT-072-03, DLT-072-04, DLT-072-06, DLT-072-08, DLT-072-09, DLT-072-10]
+            hours: 20
+            ac:
+              - 読取時刻から検知時刻までの遅延が別指標として表示される
+      - id: E-14-S02
+        title: アラーム通知
+        screens: [SCR-072]
+        tasks:
+          - title: SLA 超過チェックジョブとアウトボックス経由のメール督促
+            layer: batch
+            refs: [DLT-072-07, ADR-0009]
+            hours: 10
+            depends: [E-22-S03]
+            ac:
+              - 初回レビューがない状態で SLA を超えたアラームに督促メールが送られる（SMS なし）
+      - id: E-14-S03
+        title: 逸脱ケース管理
+        screens: [SCR-074]
+        tasks:
+          - title: deviation_case_lots への置換、deviation_entries の INSERT 専用トリガー、excursion メタ参照
+            layer: db
+            refs: [DLT-074-03, DLT-074-05, DLT-074-06, GAP-051, GAP-067]
+            hours: 12
+            ac:
+              - 記録済みのエントリは変更・削除できない
+          - title: 逸脱の証拠ファイルを attachments に保存し、短期 URL を発行
+            layer: api
+            refs: [DLT-074-04, ADR-0003, ADR-0010]
+            hours: 8
+            depends: [E-24-S03]
+            ac:
+              - URL 発行の前に監査イベントが残る
+          - title: ROLE-010 のクローズ承認（閲覧専用＋承認ボタン）、承認者一覧とレビュー依頼通知
+            layer: api
+            refs: [DLT-074-01, DLT-074-07, D-04]
+            hours: 12
+            ac:
+              - クローズは起票者・調査者と異なる承認者だけが行える
+          - title: SCR-074 / SCR-072 UI（ステッパー選択表示・段階ラベル・「逸脱ケースを開く」）
+            layer: ui
+            refs: [DLT-074-08, DLT-074-09, DLT-072-05]
+            hours: 8
+            ac:
+              - ケースが既にあるアラームでは新規起票せず既存ケースを開く
+
+  - id: E-16
+    title: トレーサビリティ検索
+    stories:
+      - id: E-16-S01
+        title: 双方向トレース検索
+        screens: [SCR-080]
+        tasks:
+          - title: searchTrace を監査付き SECURITY DEFINER 読取 RPC に変更し、デモ既定クエリを廃止
+            layer: db
+            refs: [DLT-080-01, GAP-052, ADR-0010]
+            hours: 10
+            ac:
+              - 全ロールの検索が監査イベントに記録される
+          - title: 索引を使うトレースクエリと staging での 300,000 出荷行負荷テスト（3 年分 60 秒以内）
+            layer: test
+            refs: [DLT-080-07, NFR-PERF-02]
+            hours: 16
+            ac:
+              - 300,000 出荷行＋温度 250 万件で 3 年分のトレースが 60 秒以内
+          - title: SCR-080 UI（リンク終端・監査者バナー・法定レーンバッジ・9 桁文言と trace_status）
+            layer: ui
+            refs: [DLT-080-03, DLT-080-04, DLT-080-05, DLT-080-08]
+            hours: 12
+            ac:
+              - 法定トレース対象は米・牛のみと明示し、他 SKU は社内方針として表示する
+          - title: 証拠ファイルの短期 URL 発行 API（発行前に監査記録）と起票確認ダイアログ
+            layer: api
+            refs: [DLT-080-09, DLT-080-10]
+            hours: 10
+            depends: [E-17-S01]
+            ac:
+              - 回収起票ダイアログに隔離される数量が表示される
+      - id: E-16-S02
+        title: 規制レーン識別子管理
+        screens: [SCR-080]
+        tasks:
+          - title: 米取引 ID 検索と米取引 5 項目表（欠落項目の表示）
+            layer: ui
+            refs: [DLT-080-06, BR-TRACE-01, GAP-014]
+            hours: 10
+            depends: [E-02-S05]
+            ac:
+              - rice_transaction_id で検索でき、欠けている項目が明示される
+
+  - id: E-17
+    title: 回収管理
+    stories:
+      - id: E-17-S01
+        title: リコールケース管理
+        screens: [SCR-082]
+        tasks:
+          - title: open_recall_case で範囲内の手持在庫を同一トランザクションで隔離し lot_events を記録
+            layer: db
+            refs: [DLT-082-01, GAP-070]
+            priority: P0
+            hours: 12
+            ac:
+              - ケース起票と在庫隔離が同時に確定し、理由にケース番号が残る
+          - title: advance_recall_case（scoped / reconciled / closed、条件チェックは DB）
+            layer: db
+            refs: [DLT-082-05, DLT-082-06, ACC-TRC-01]
+            hours: 10
+            ac:
+              - 数量照合が合わないケースはクローズできない
+          - title: recall_tasks と追加・完了 RPC（廃棄承認タスクは作成者 ≠ 承認者）
+            layer: db
+            refs: [DLT-082-04, F-062]
+            hours: 12
+            ac:
+              - タスクごとに期限と担当が管理される
+      - id: E-17-S02
+        title: 回収数量照合
+        screens: [SCR-082]
+        tasks:
+          - title: recall_scope_lines による照合とケース別集計ビュー、KPI × 6 ＋数量照合カード
+            layer: db
+            refs: [DLT-082-03, DLT-082-10, GAP-050]
+            hours: 16
+            ac:
+              - キットの 2 つの照合式が行単位データから計算される
+      - id: E-17-S03
+        title: 回収通知（版管理・承認）
+        screens: [SCR-082]
+        tasks:
+          - title: 主要連絡先（customer_contacts）から通知先を取得し、通知版パネルと送信状態を表示
+            layer: ui
+            refs: [DLT-082-07, DLT-082-08, GAP-007, D-14]
+            hours: 12
+            depends: [E-22-S03]
+            ac:
+              - 通知は QA 担当 A が作成し、別の QA 担当 B が承認してから送信される
+
+  - id: E-19
+    title: 監査エビデンス・保持
+    stories:
+      - id: E-19-S01
+        title: 監査エビデンスエクスポート
+        screens: [SCR-080, SCR-082]
+        tasks:
+          - title: evidence_exports（バンドル＋ SHA-256 マニフェスト、不一致時は発行拒否）とトレース CSV 出力
+            layer: api
+            refs: [DLT-080-02, DLT-082-09, GAP-062, FR-RPT-02]
+            hours: 18
+            depends: [E-24-S03]
+            ac:
+              - マニフェストと中身が一致しない出力は発行されない
+              - SCR-082 からは監査者宛ての出力依頼になる
+
+  - id: E-20
+    title: マスター管理
+    stories:
+      - id: E-20-S02
+        title: 顧客・顧客×SKU 契約マスター
+        screens: [SCR-101]
+        tasks:
+          - title: contract_versions と v1 バックフィル（2026-04-01 有効、AGR-008 / AGR-014 は未設定のまま）
+            layer: db
+            refs: [DLT-101-02, GAP-004, D-02, D-10]
+            hours: 16
+            ac:
+              - 引当は納品予定日時点で有効な契約版を参照する
+              - AGR-008 / AGR-014 に既定値を入れない
+          - title: customer_code_mappings と顧客コード対応表の作成フォーム（承認付き）
+            layer: db
+            refs: [DLT-101-06, GAP-006, Q-new-06]
+            hours: 12
+            ac:
+              - 承認済みの対応表だけが日付逆転の履歴連結に使われる
+          - title: 配送ウィンドウ計算プレビュー（lib/rules 共通関数）と POD 必須エビデンス選択欄
+            layer: ui
+            refs: [DLT-101-04, DLT-101-05, D-01, D-03]
+            hours: 12
+            ac:
+              - プレビューは引当と同じ計算関数を使う
+          - title: SCR-101 UI（未設定ラベル統一・確認状況文言・CSV / 承認キュー / 新規登録ボタン・ROLE-004 閲覧）
+            layer: ui
+            refs: [DLT-101-03, DLT-101-07, DLT-101-08, DLT-101-09]
+            hours: 10
+            ac:
+              - 未設定の契約は「未設定（business-review）」と表示される
+      - id: E-20-S06
+        title: マスター承認・版管理
+        screens: [SCR-101, SCR-054, SCR-079]
+        tasks:
+          - title: master_change_requests と作成者 ≠ 承認者 CHECK 付き承認 RPC（全マスター共通）
+            layer: db
+            refs: [GAP-005, DLT-101-01, ADR-0005]
+            hours: 16
+            ac:
+              - 契約・SKU 等のマスター変更は承認されるまで反映されない
+          - title: rule_params を operating_param_versions と型付き版テーブルに分割、v1 に「仮決定 D-xx」を付与
+            layer: db
+            refs: [GAP-002, GAP-059, Q-new-19]
+            hours: 12
+            ac:
+              - 顧客回答後はデータ構造を変えずに版の追加だけで反映できる
+
+  - id: E-21
+    title: 認証・権限・監査ログ
+    stories:
+      - id: E-21-S01
+        title: SSO ログイン・MFA
+        screens: []
+        tasks:
+          - title: OIDC ログイン（IdP グループ → ロール対応表）、user_sessions、リクエストごとの app.session_id
+            layer: api
+            refs: [GAP-053, ADR-0011, QA-007]
+            hours: 24
+            ac:
+              - ロールは IdP グループから決まり、アプリ内でロールを切り替えられない
+      - id: E-21-S02
+        title: 共有機器の短時間セッション
+        screens: [SCR-014, SCR-062]
+        tasks:
+          - title: last_seen_at の保存と set_request_context によるドック端末のアイドル超過セッション拒否
+            layer: db
+            refs: [DLT-014-07, GAP-054, ADR-0011]
+            hours: 10
+            depends: [E-21-S01]
+            ac:
+              - アイドル上限を超えたドック端末の操作はサーバー側で拒否される
+          - title: devices と端末 Cookie（ROLE-009 発行）、ドック RPC の端末チェックと未登録端末状態
+            layer: db
+            refs: [DLT-014-09, GAP-008, ADR-0013]
+            hours: 12
+            ac:
+              - 未登録の端末からはドック操作ができない
+      - id: E-21-S03
+        title: ロール・権限管理（RBAC）
+        screens: []
+        tasks:
+          - title: ADR-0010 のマトリクスに沿ったロール別 RLS SELECT ポリシーと entity_history()
+            layer: db
+            refs: [GAP-052, ADR-0010]
+            priority: P0
+            hours: 24
+            ac:
+              - ログイン済みなら全表を読める状態をなくし、ロール別に読める範囲を限定する
+          - title: current_app_user / role を app.* コンテキスト参照に変更し、ycl_app / ycl_batch ロールを作成
+            layer: db
+            refs: [GAP-055, ADR-0013]
+            hours: 12
+            ac:
+              - Supabase の auth.uid() に依存しない
+          - title: ロール切替機能（set_active_role・メニュー）を本番から削除
+            layer: api
+            refs: [GAP-056, PREMISE §3.2]
+            hours: 6
+            ac:
+              - 本番ビルドにロール切替の関数・メニューが含まれない
+          - title: ロール別アクセステスト（ADR-0010 Verification）
+            layer: test
+            refs: [ADR-0010 Verification]
+            hours: 16
+            ac:
+              - 10 ロール × 主要テーブルの読取可否が自動テストで確認される
+          - tid: T-167  # added 2026-10-29 after Sprint 1 (GAP-066 was missed in the first breakdown)
+            not_before: Sprint 2
+            title: idempotency_keys を private スキーマへ移し、expires_at と期限切れキーの定期削除を追加
+            layer: db
+            refs: [GAP-066, ADR-0010, ADR-0007]
+            hours: 8
+            ac:
+              - API 用ロールから idempotency_keys を参照できない
+              - 期限切れのキーは定期ジョブで削除され、有効期間内の再送は同じ結果を返す
+      - id: E-21-S04
+        title: 監査ログ（追記専用）
+        screens: []
+        tasks:
+          - title: 全イベントテーブルの INSERT 専用トリガーと CI の照合スクリプト、audit_events に session_id / device_code
+            layer: db
+            refs: [GAP-067, GAP-069, ADR-0003]
+            hours: 12
+            ac:
+              - トリガーのないイベントテーブルがあると CI が失敗する
+
+  - id: E-22
+    title: 外部連携
+    stories:
+      - id: E-22-S02
+        title: 地図サービス連携
+        screens: [SCR-051]
+        tasks:
+          - title: IF-MAP-01 接続（タイムアウト＋キャッシュ）とルート所要時間の見積り
+            layer: api
+            refs: [DLT-051-10, IF-MAP-01, BR-021]
+            hours: 16
+            ac:
+              - 地図サービスが応答しない場合もルート計画画面は使える
+      - id: E-22-S03
+        title: メール通知基盤
+        screens: [SCR-072, SCR-082]
+        tasks:
+          - title: mock_sent を廃止し、notification_outbox の再試行とメールリレー送信ジョブを実装
+            layer: batch
+            refs: [GAP-060, DLT-082-02, IF-MAIL-01]
+            hours: 16
+            ac:
+              - 送信失敗は attempts / last_error に残り、再試行される
+
+  - id: E-23
+    title: データ移行
+    stories:
+      - id: E-23-S02
+        title: 変換・取込（判定と lineage）
+        screens: []
+        tasks:
+          - title: migration_batches / migration_rows / migration_review_decisions と件数照合 CHECK
+            layer: db
+            refs: [GAP-065]
+            priority: P0
+            hours: 12
+            ac:
+              - 移行元件数 = ACCEPT + REJECT + DUPLICATE + BUSINESS-REVIEW が DB で保証される
+          - title: 移行判定ルール（不正日付・牛 9 桁・AGR-008 / AGR-014 は推定せず BUSINESS-REVIEW）
+            layer: batch
+            refs: [PREMISE §4.6, QA-019, QA-020]
+            hours: 16
+            ac:
+              - 空欄・YYYY/MM/DD・DD-MM-YYYY・Excel シリアルの日付を推定せず BUSINESS-REVIEW にする
+              - 牛 9 桁をゼロ埋めしない
+
+  - id: E-24
+    title: 共通基盤・非機能
+    stories:
+      - id: E-24-S03
+        title: 暗号化・秘密情報管理
+        screens: []
+        tasks:
+          - title: attachments 共通基盤（S3 暗号化保存・短期署名 URL・owner_type）
+            layer: api
+            refs: [TBC-83, ADR-0013, ADR-0003]
+            hours: 16
+            ac:
+              - ファイルは暗号化保存され、短期 URL でのみ取得できる
+      - id: E-24-S04
+        title: 日本語 UI・JST・アクセシビリティ共通部品
+        screens: []
+        tasks:
+          - title: demo_now() をサーバー時刻に置換（JST 表示・ISO 8601 保存）し、デモ用時刻キーを削除
+            layer: db
+            refs: [GAP-058, DLT-025-06, DLT-033-13, DLT-072-06]
+            hours: 10
+            ac:
+              - 本番に固定時刻を返す関数が残らない
+          - title: seed / リセットを demo/ マイグレーションに分離し、本番ビルドでリセット関数を検出したら失敗
+            layer: batch
+            refs: [GAP-057, PREMISE §3.2]
+            hours: 8
+            ac:
+              - 本番ビルドにデモデータ初期化機能が含まれない

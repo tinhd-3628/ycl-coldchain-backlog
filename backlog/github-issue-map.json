@@ -1,0 +1,4024 @@
+{
+ "E-02": {
+  "number": 1,
+  "id": 6090450569,
+  "node_id": "I_kwDOVay__s8AAAABawTmiQ",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYIY",
+  "content_sha": "3d77d8deb666e54ec67342b9bf05c8b526c157c372ac0beebdc6841cf5f5892b",
+  "fields_written": {
+   "Estimate (h)": 230,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 84,
+   "PIC": "PL"
+  }
+ },
+ "E-02-S01": {
+  "number": 2,
+  "id": 6090451756,
+  "node_id": "I_kwDOVay__s8AAAABawTrLA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYNw",
+  "content_sha": "6c7dc413f49a2b9bac01dbda29d7ee95b440f0a0b2dac2476d8e61ef494e1c5d",
+  "fields_written": {
+   "Estimate (h)": 28,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 15
+  }
+ },
+ "E-02-S02": {
+  "number": 3,
+  "id": 6090453212,
+  "node_id": "I_kwDOVay__s8AAAABawTw3A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYSM",
+  "content_sha": "24423508ce4d94ca4bb2b31055998d667742410e32bc5942f13833383028d466",
+  "fields_written": {
+   "Estimate (h)": 30,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 11
+  }
+ },
+ "E-02-S03": {
+  "number": 4,
+  "id": 6090454751,
+  "node_id": "I_kwDOVay__s8AAAABawT23w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYXw",
+  "content_sha": "4cdece468e04a6ebeae5ff3c753624c56cf4aad87482cd0987c72e24d8a5ef79",
+  "fields_written": {
+   "Estimate (h)": 74,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 18
+  }
+ },
+ "E-02-S04": {
+  "number": 5,
+  "id": 6090456370,
+  "node_id": "I_kwDOVay__s8AAAABawT9Mg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYbU",
+  "content_sha": "6be2becd7467dee6ef3445cce7c02234bead8643a6abaf2a4edee655ed013918",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 9
+  }
+ },
+ "E-02-S05": {
+  "number": 6,
+  "id": 6090457954,
+  "node_id": "I_kwDOVay__s8AAAABawUDYg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYfs",
+  "content_sha": "2d970f8447cd7d1091bb21e72f10f985f20d59b6e492e1805fac6b91a33f0b1b",
+  "fields_written": {
+   "Estimate (h)": 38,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 14
+  }
+ },
+ "E-02-S06": {
+  "number": 7,
+  "id": 6090459502,
+  "node_id": "I_kwDOVay__s8AAAABawUJbg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYkA",
+  "content_sha": "c9726a4c5c92d2b6cb3409fdea43e4d833e9a96197bb2499a39a5d4f2e592cfd",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 10
+  }
+ },
+ "E-02-S07": {
+  "number": 8,
+  "id": 6090461173,
+  "node_id": "I_kwDOVay__s8AAAABawUP9Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYoU",
+  "content_sha": "a86e9f7e5a289488632967d78ca4c84d9aaf4b6d76f52c4dc1cbc21cc430cadb",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 7
+  }
+ },
+ "E-03": {
+  "number": 9,
+  "id": 6090462713,
+  "node_id": "I_kwDOVay__s8AAAABawUV-Q",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYsA",
+  "content_sha": "713d4d35c301ebc39c8176986e7e2e7ae3a6551dae693d9a270e8e15c7630c9a",
+  "fields_written": {
+   "Estimate (h)": 68,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 22,
+   "PIC": "PL"
+  }
+ },
+ "E-03-S01": {
+  "number": 10,
+  "id": 6090463868,
+  "node_id": "I_kwDOVay__s8AAAABawUafA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWYxI",
+  "content_sha": "e80e94ad31ab3ff47e86b74f996521b72f380407b31265c779c636868667c91c",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 6
+  }
+ },
+ "E-03-S02": {
+  "number": 11,
+  "id": 6090475970,
+  "node_id": "I_kwDOVay__s8AAAABawVJwg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZbg",
+  "content_sha": "5a3fd9d20a4f2f8b90e50b1c4c54b1f40a357216ec07230952b2643e98f62806",
+  "fields_written": {
+   "Estimate (h)": 56,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 16
+  }
+ },
+ "E-06": {
+  "number": 12,
+  "id": 6090477551,
+  "node_id": "I_kwDOVay__s8AAAABawVP7w",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZg8",
+  "content_sha": "02b135951bc3fb794febce26d0c5606963f86e56becab335f6d75ae2fbc067e5",
+  "fields_written": {
+   "Estimate (h)": 98,
+   "Status": "Todo",
+   "Due Date": "2027-01-05",
+   "SWP": 41,
+   "PIC": "PL"
+  }
+ },
+ "E-06-S02": {
+  "number": 13,
+  "id": 6090478812,
+  "node_id": "I_kwDOVay__s8AAAABawVU3A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZmA",
+  "content_sha": "e807d84df27911381b452bdfe1d6d953ce53c6ce8bb7f2f973ca0ba5666a0ec2",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 7
+  }
+ },
+ "E-06-S03": {
+  "number": 14,
+  "id": 6090480571,
+  "node_id": "I_kwDOVay__s8AAAABawVbuw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZro",
+  "content_sha": "90eb96b88d59725fc88528417f9f52a648a69a09105ca1f07aea8416d1b928b5",
+  "fields_written": {
+   "Estimate (h)": 26,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 13
+  }
+ },
+ "E-06-S05": {
+  "number": 15,
+  "id": 6090482283,
+  "node_id": "I_kwDOVay__s8AAAABawViaw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZxY",
+  "content_sha": "9330e9c5717bdf9fed6f6d497204c1fbb1cc759e9ccba430ca9f81eec385f7be",
+  "fields_written": {
+   "Estimate (h)": 30,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "SWP": 9
+  }
+ },
+ "E-06-S06": {
+  "number": 16,
+  "id": 6090484144,
+  "node_id": "I_kwDOVay__s8AAAABawVpsA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZ34",
+  "content_sha": "839b957acbd093354644cf63c949d108c8451d542e1381877ee5b640d10b2a00",
+  "fields_written": {
+   "Estimate (h)": 30,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 12
+  }
+ },
+ "E-08": {
+  "number": 17,
+  "id": 6090486144,
+  "node_id": "I_kwDOVay__s8AAAABawVxgA",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWZ98",
+  "content_sha": "8dcb9c902b10d05e6bfb29fe46ce2763cfb12f78e28a45deddfccc1d67246992",
+  "fields_written": {
+   "Estimate (h)": 146,
+   "Status": "Todo",
+   "Due Date": "2027-01-05",
+   "SWP": 51,
+   "PIC": "PL"
+  }
+ },
+ "E-08-S01": {
+  "number": 18,
+  "id": 6090487396,
+  "node_id": "I_kwDOVay__s8AAAABawV2ZA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWaDQ",
+  "content_sha": "80811998de3df5321d69d9f24d2001f0474fa22cf0785e8ef8ff422e73e7f8f3",
+  "fields_written": {
+   "Estimate (h)": 112,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 41
+  }
+ },
+ "E-08-S02": {
+  "number": 19,
+  "id": 6090489188,
+  "node_id": "I_kwDOVay__s8AAAABawV9ZA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWaJw",
+  "content_sha": "741e42eca69860c57b339b1137c1af5d91e2500e680d06a81821bf6f536afd61",
+  "fields_written": {
+   "Estimate (h)": 34,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "SWP": 10
+  }
+ },
+ "E-09": {
+  "number": 20,
+  "id": 6090491023,
+  "node_id": "I_kwDOVay__s8AAAABawWEjw",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWaOc",
+  "content_sha": "b4cc502ad96c8ae42ddd0744b690b99a8fe014d302216abfedda972074e82390",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "Due Date": "2027-01-05",
+   "SWP": 6,
+   "PIC": "PL"
+  }
+ },
+ "E-09-S02": {
+  "number": 21,
+  "id": 6090492287,
+  "node_id": "I_kwDOVay__s8AAAABawWJfw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWaUg",
+  "content_sha": "381ee783a4474e4bef724d634bf0c729b55b009bc0d108788a85249d894ac318",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 6
+  }
+ },
+ "E-10": {
+  "number": 22,
+  "id": 6090494288,
+  "node_id": "I_kwDOVay__s8AAAABawWRUA",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWaZc",
+  "content_sha": "877bd8bcc1e5dc5f62b846a24d80fffb74ee59d0a8015e51cb74c814cd2ae079",
+  "fields_written": {
+   "Estimate (h)": 190,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 76,
+   "PIC": "PL"
+  }
+ },
+ "E-10-S01": {
+  "number": 23,
+  "id": 6090495477,
+  "node_id": "I_kwDOVay__s8AAAABawWV9Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWafM",
+  "content_sha": "d9a658583b104230ce783abac7e0b0a04dabf37cb2df47316c06548d92e019bf",
+  "fields_written": {
+   "Estimate (h)": 38,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 16
+  }
+ },
+ "E-10-S02": {
+  "number": 24,
+  "id": 6090497095,
+  "node_id": "I_kwDOVay__s8AAAABawWcRw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWalA",
+  "content_sha": "732fc817a998ab8f48fede09fe4bcdf6498810cc22724dd7dc6d091a5a5d5f2e",
+  "fields_written": {
+   "Estimate (h)": 38,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 16
+  }
+ },
+ "E-10-S03": {
+  "number": 25,
+  "id": 6090498588,
+  "node_id": "I_kwDOVay__s8AAAABawWiHA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWaqo",
+  "content_sha": "01cbbaaee101dc31cf80a3875d156e7309767a6737eca30d333161479d335f6f",
+  "fields_written": {
+   "Estimate (h)": 98,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 36
+  }
+ },
+ "E-10-S04": {
+  "number": 26,
+  "id": 6090500367,
+  "node_id": "I_kwDOVay__s8AAAABawWpDw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWavc",
+  "content_sha": "032b1f646cf6900357bae46ea96cf485ec64ea78eb91c4193e3ecef94d112a88",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 8
+  }
+ },
+ "E-11": {
+  "number": 27,
+  "id": 6090502190,
+  "node_id": "I_kwDOVay__s8AAAABawWwLg",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWa0Y",
+  "content_sha": "6c01915003e6851a347efd05db570c49d6c9404a2a9b78706eaeb8330f4d3802",
+  "fields_written": {
+   "Estimate (h)": 300,
+   "Status": "Todo",
+   "Due Date": "2027-01-05",
+   "SWP": 79,
+   "PIC": "PL"
+  }
+ },
+ "E-11-S02": {
+  "number": 28,
+  "id": 6090503367,
+  "node_id": "I_kwDOVay__s8AAAABawW0xw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWa5w",
+  "content_sha": "077f176c741948da492520b737b32b570823d37b3835f2091eb7a85b6792ed05",
+  "fields_written": {
+   "Estimate (h)": 108,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 26
+  }
+ },
+ "E-11-S03": {
+  "number": 29,
+  "id": 6090505118,
+  "node_id": "I_kwDOVay__s8AAAABawW7ng",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWa_w",
+  "content_sha": "bed97bf8f5e81f5458e1cd667c31c990cd0dca6dab02e400adb032162a9a3cf4",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 6
+  }
+ },
+ "E-11-S04": {
+  "number": 30,
+  "id": 6090507016,
+  "node_id": "I_kwDOVay__s8AAAABawXDCA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbFI",
+  "content_sha": "21c3317716bad4b56d3469a5ae2d3140309a03b23f78600ad0ca32679ff7ecf4",
+  "fields_written": {
+   "Estimate (h)": 76,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "SWP": 19
+  }
+ },
+ "E-11-S05": {
+  "number": 31,
+  "id": 6090508611,
+  "node_id": "I_kwDOVay__s8AAAABawXJQw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbK4",
+  "content_sha": "0b5633053006b84960202e591eb01f11ac6087ff2ec1cf4f49263b1b4a7a1dc2",
+  "fields_written": {
+   "Estimate (h)": 102,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 28
+  }
+ },
+ "E-12": {
+  "number": 32,
+  "id": 6090510218,
+  "node_id": "I_kwDOVay__s8AAAABawXPig",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbQs",
+  "content_sha": "08a9013084603d446fa50a7658e61a1966863d8a7793bb8121e6a31f3cdf7726",
+  "fields_written": {
+   "Estimate (h)": 90,
+   "Status": "Todo",
+   "Due Date": "2027-01-05",
+   "SWP": 37,
+   "PIC": "PL"
+  }
+ },
+ "E-12-S01": {
+  "number": 33,
+  "id": 6090511355,
+  "node_id": "I_kwDOVay__s8AAAABawXT-w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbWs",
+  "content_sha": "670e0915ac024609f5a9cf1aed53d675f6555f3de896eac4f505462197d92030",
+  "fields_written": {
+   "Estimate (h)": 74,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 30
+  }
+ },
+ "E-12-S04": {
+  "number": 34,
+  "id": 6090513036,
+  "node_id": "I_kwDOVay__s8AAAABawXajA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbek",
+  "content_sha": "1c0f1d2da18e907bf70a0da7c1c0b197b51a23b30139fe469346ff7b52a2afe8",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 7
+  }
+ },
+ "E-13": {
+  "number": 35,
+  "id": 6090514880,
+  "node_id": "I_kwDOVay__s8AAAABawXhwA",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbjk",
+  "content_sha": "e6461c596b9a51fdbb7c3e162afb5c3085073740573eb8bfd159d083acefc8de",
+  "fields_written": {
+   "Estimate (h)": 164,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 59,
+   "PIC": "PL"
+  }
+ },
+ "E-13-S01": {
+  "number": 36,
+  "id": 6090515980,
+  "node_id": "I_kwDOVay__s8AAAABawXmDA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbno",
+  "content_sha": "584fe45f76a189977ae126f8746e6318efafa4b50f7fd7ba3cd840630a52e1d8",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 12
+  }
+ },
+ "E-13-S02": {
+  "number": 37,
+  "id": 6090517587,
+  "node_id": "I_kwDOVay__s8AAAABawXsUw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbtk",
+  "content_sha": "60bc964dc6bdd163ec2140b05dc2e95f3ec00ae0da4e5b3c43d20a334daefd2d",
+  "fields_written": {
+   "Estimate (h)": 46,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 16
+  }
+ },
+ "E-13-S03": {
+  "number": 38,
+  "id": 6090519288,
+  "node_id": "I_kwDOVay__s8AAAABawXy-A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWbzI",
+  "content_sha": "ef319f49a35ff5adca11e09d74de65a261a1a10f0e6f4d8de9a5f5ec3e2e7279",
+  "fields_written": {
+   "Estimate (h)": 74,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 23
+  }
+ },
+ "E-13-S04": {
+  "number": 39,
+  "id": 6090520964,
+  "node_id": "I_kwDOVay__s8AAAABawX5hA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWb5s",
+  "content_sha": "daa9b15bbac1de762b9b0188e2067f76a60ee778392c1db658e5952acea6f042",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 8
+  }
+ },
+ "E-14": {
+  "number": 40,
+  "id": 6090522823,
+  "node_id": "I_kwDOVay__s8AAAABawYAxw",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcAQ",
+  "content_sha": "ad6da53844a8cac82c20a87fa83aabc23ff05c43e0617fde5fa0f83e416f82fd",
+  "fields_written": {
+   "Estimate (h)": 106,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 45,
+   "PIC": "PL"
+  }
+ },
+ "E-14-S01": {
+  "number": 41,
+  "id": 6090524034,
+  "node_id": "I_kwDOVay__s8AAAABawYFgg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcFk",
+  "content_sha": "fdab801e65427e5ad33d42475f66db2ad27d6b877f3f8748743c8c6350a1bb37",
+  "fields_written": {
+   "Estimate (h)": 40,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "SWP": 14
+  }
+ },
+ "E-14-S02": {
+  "number": 42,
+  "id": 6090525866,
+  "node_id": "I_kwDOVay__s8AAAABawYMqg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcMs",
+  "content_sha": "ad9cb46a823cd304fa1b34730305d75806cd906a673813313da91ddffa83160f",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 8
+  }
+ },
+ "E-14-S03": {
+  "number": 43,
+  "id": 6090527832,
+  "node_id": "I_kwDOVay__s8AAAABawYUWA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcTQ",
+  "content_sha": "3bc02cdc44c0b4c2c381c43b53723db2309f8e43dd0b8d9adebc4ddce8e929a6",
+  "fields_written": {
+   "Estimate (h)": 52,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 23
+  }
+ },
+ "E-16": {
+  "number": 44,
+  "id": 6090529725,
+  "node_id": "I_kwDOVay__s8AAAABawYbvQ",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcYg",
+  "content_sha": "a73769a93eab16680e5093ff4574c418de1b356296e7fda54f1be3fae8321e98",
+  "fields_written": {
+   "Estimate (h)": 62,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 23,
+   "PIC": "PL"
+  }
+ },
+ "E-16-S01": {
+  "number": 45,
+  "id": 6090531087,
+  "node_id": "I_kwDOVay__s8AAAABawYhDw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcdg",
+  "content_sha": "513f7846ffc983ce299800eeb68e3926d84cffd9de92c4ed1cda07a7660ab5f3",
+  "fields_written": {
+   "Estimate (h)": 48,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "SWP": 17
+  }
+ },
+ "E-16-S02": {
+  "number": 46,
+  "id": 6090532905,
+  "node_id": "I_kwDOVay__s8AAAABawYoKQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcko",
+  "content_sha": "aee08aa25fa47054b2243a14917cf1bd1469eabd1a7145b57862b1d5e639bafd",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "SWP": 6
+  }
+ },
+ "E-17": {
+  "number": 47,
+  "id": 6090534730,
+  "node_id": "I_kwDOVay__s8AAAABawYvSg",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcp0",
+  "content_sha": "a624b41735f19aed2b6050e833ab9d07261a5da1fe2f60120722680b83311e4e",
+  "fields_written": {
+   "Estimate (h)": 80,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 34,
+   "PIC": "PL"
+  }
+ },
+ "E-17-S01": {
+  "number": 48,
+  "id": 6090535836,
+  "node_id": "I_kwDOVay__s8AAAABawYznA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWcus",
+  "content_sha": "1f25bd9fd9073e80edba3dac05cf1639f40d6f972018f3cf1c24fa6e427b805c",
+  "fields_written": {
+   "Estimate (h)": 44,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 19
+  }
+ },
+ "E-17-S02": {
+  "number": 49,
+  "id": 6090537722,
+  "node_id": "I_kwDOVay__s8AAAABawY6-g",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWc0o",
+  "content_sha": "994957a99b9117bbf0f8add98b09c421a6bb299fb204cc8edae4efc1ef59eaeb",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 8
+  }
+ },
+ "E-17-S03": {
+  "number": 50,
+  "id": 6090539396,
+  "node_id": "I_kwDOVay__s8AAAABawZBhA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWc6Q",
+  "content_sha": "de000cbd82c1f69b60ce7bbd136d442ef0043c1e2a5c22c09836dfb55965a01d",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "SWP": 7
+  }
+ },
+ "E-19": {
+  "number": 51,
+  "id": 6090540974,
+  "node_id": "I_kwDOVay__s8AAAABawZHrg",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWc-8",
+  "content_sha": "522d281e64a3a1b37360beaa8f68bf5c03299239170c0129a20dc47630d17d23",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 9,
+   "PIC": "PL"
+  }
+ },
+ "E-19-S01": {
+  "number": 52,
+  "id": 6090542292,
+  "node_id": "I_kwDOVay__s8AAAABawZM1A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdEs",
+  "content_sha": "36c266043453ee87344c20540d2c9f411a2cd8da644534d05272f84866817f13",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 9
+  }
+ },
+ "E-20": {
+  "number": 53,
+  "id": 6090544122,
+  "node_id": "I_kwDOVay__s8AAAABawZT-g",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdKk",
+  "content_sha": "6500efed6898a76e3e782cc34a7048549118ed07531d9a9b9460eff162d1735b",
+  "fields_written": {
+   "Estimate (h)": 100,
+   "Status": "Todo",
+   "Due Date": "2026-12-01",
+   "SWP": 41,
+   "PIC": "PL"
+  }
+ },
+ "E-20-S02": {
+  "number": 54,
+  "id": 6090545367,
+  "node_id": "I_kwDOVay__s8AAAABawZY1w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdP8",
+  "content_sha": "06a2c5dc749f62d77e705149666af2351ac00545a4c9664f176ec86a21b308a1",
+  "fields_written": {
+   "Estimate (h)": 64,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 26
+  }
+ },
+ "E-20-S06": {
+  "number": 55,
+  "id": 6090547181,
+  "node_id": "I_kwDOVay__s8AAAABawZf7Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdVI",
+  "content_sha": "e0d461dd3f221f12d78cedf95ffce9047b155b57780f25018c7e13706c7b9129",
+  "fields_written": {
+   "Estimate (h)": 36,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 15
+  }
+ },
+ "E-21": {
+  "number": 56,
+  "id": 6090548997,
+  "node_id": "I_kwDOVay__s8AAAABawZnBQ",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdY8",
+  "content_sha": "1ac174b71947fec68f2186f013f2fadf8c54a06f68017bf2101b0a26e5dcd1c2",
+  "fields_written": {
+   "Estimate (h)": 140,
+   "Status": "Todo",
+   "Due Date": "2026-12-01",
+   "SWP": 51,
+   "PIC": "PL"
+  }
+ },
+ "E-21-S01": {
+  "number": 57,
+  "id": 6090550288,
+  "node_id": "I_kwDOVay__s8AAAABawZsEA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWddo",
+  "content_sha": "7e15e082784bcefda7b4dcc2b70350e503c85b6667320d6e680b5b2f8d28f8ad",
+  "fields_written": {
+   "Estimate (h)": 30,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "SWP": 10
+  }
+ },
+ "E-21-S02": {
+  "number": 58,
+  "id": 6090552200,
+  "node_id": "I_kwDOVay__s8AAAABawZziA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdj8",
+  "content_sha": "e20208cfe3033adbc6dad21830b9a71ca3c06c4aaac912654379b080a311cb21",
+  "fields_written": {
+   "Estimate (h)": 28,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 13
+  }
+ },
+ "E-21-S03": {
+  "number": 59,
+  "id": 6090554148,
+  "node_id": "I_kwDOVay__s8AAAABawZ7JA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdqA",
+  "content_sha": "a081e858a6eb48a290a9528c5a8d1ea5f28ef874caef9612f8697bca9dcf8a5f",
+  "fields_written": {
+   "Estimate (h)": 66,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 20
+  }
+ },
+ "E-21-S04": {
+  "number": 60,
+  "id": 6090555877,
+  "node_id": "I_kwDOVay__s8AAAABawaB5Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWdvk",
+  "content_sha": "2409ad5286c4eb103d288bf57233754c28e7c231c8bff3f2d57278dcd8571569",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 8
+  }
+ },
+ "E-22": {
+  "number": 61,
+  "id": 6090557804,
+  "node_id": "I_kwDOVay__s8AAAABawaJbA",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWd18",
+  "content_sha": "7e60cbf312c17c39233ca60cae75e85e0f365b4e6bdd71434f38a156942b9832",
+  "fields_written": {
+   "Estimate (h)": 40,
+   "Status": "Todo",
+   "Due Date": "2027-02-02",
+   "SWP": 18,
+   "PIC": "PL"
+  }
+ },
+ "E-22-S02": {
+  "number": 62,
+  "id": 6090559146,
+  "node_id": "I_kwDOVay__s8AAAABawaOqg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWd78",
+  "content_sha": "3ca3b8a4c6d57c3a19c0720e006df22d9f86dbc556b1125d5b608eb2c99030fd",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 8
+  }
+ },
+ "E-22-S03": {
+  "number": 63,
+  "id": 6090560876,
+  "node_id": "I_kwDOVay__s8AAAABawaVbA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWeCc",
+  "content_sha": "128109d9b6e94a4eb4df91c2720ca2a184d1164c1a6f233999be1aef43e7bdf5",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 10
+  }
+ },
+ "E-23": {
+  "number": 64,
+  "id": 6090562993,
+  "node_id": "I_kwDOVay__s8AAAABawadsQ",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWeK4",
+  "content_sha": "792d1e1f9a7bb816eb840a069b95d84b44f516afb21c4192ae7f23c5e730c971",
+  "fields_written": {
+   "Estimate (h)": 36,
+   "Status": "Todo",
+   "Due Date": "2026-12-01",
+   "SWP": 15,
+   "PIC": "PL"
+  }
+ },
+ "E-23-S02": {
+  "number": 65,
+  "id": 6090564208,
+  "node_id": "I_kwDOVay__s8AAAABawaicA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWeQ0",
+  "content_sha": "60e9bfa9fa4a1da0ad89cf3ce7d374869d196959bd585ef2084ff5163871ed3d",
+  "fields_written": {
+   "Estimate (h)": 36,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 15
+  }
+ },
+ "E-24": {
+  "number": 66,
+  "id": 6090565847,
+  "node_id": "I_kwDOVay__s8AAAABawao1w",
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWeWg",
+  "content_sha": "cc209ca9329ccf0307f319b0fcaa3e8e0db010d3ea26d5c08424cb6e555959a9",
+  "fields_written": {
+   "Estimate (h)": 44,
+   "Status": "Todo",
+   "Due Date": "2026-12-01",
+   "SWP": 20,
+   "PIC": "PL"
+  }
+ },
+ "E-24-S03": {
+  "number": 67,
+  "id": 6090566978,
+  "node_id": "I_kwDOVay__s8AAAABawatQg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWecA",
+  "content_sha": "a609c18d8cbfa3a1a1a284a5d1602764b10062e93a6bcdf8b26f0dad14fb2add",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "SWP": 10
+  }
+ },
+ "E-24-S04": {
+  "number": 68,
+  "id": 6090568875,
+  "node_id": "I_kwDOVay__s8AAAABawa0qw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWei0",
+  "content_sha": "ee8130f861cfb996fbf60fc2b690e223a2886b63df5493a3f28d205a37bf8e16",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "SWP": 10
+  }
+ },
+ "T-001": {
+  "number": 69,
+  "id": 6090577723,
+  "node_id": "I_kwDOVay__s8AAAABawbXOw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfDQ",
+  "content_sha": "031dc4466f8213f0dd64ecc852ece5810f491556957321d56f816ddef6d4ca2b",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 8
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 14,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-03",
+   "Start Date": "2026-11-02"
+  },
+  "sim_state": "closed"
+ },
+ "T-002": {
+  "number": 70,
+  "id": 6090579530,
+  "node_id": "I_kwDOVay__s8AAAABawbeSg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfJs",
+  "content_sha": "0c80fd437f40cd277a5e1b890147bc873007296190eb2d6d280ee921e5252af6",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 4
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 10,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-03",
+   "Start Date": "2026-11-02"
+  },
+  "sim_state": "closed"
+ },
+ "T-003": {
+  "number": 71,
+  "id": 6090581224,
+  "node_id": "I_kwDOVay__s8AAAABawbk6A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfOo",
+  "content_sha": "118a511ee29fb5e10979a26b370fa2d54a46692bfba1b717fbc8c7e3f7848d68",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-004": {
+  "number": 72,
+  "id": 6090582906,
+  "node_id": "I_kwDOVay__s8AAAABawbreg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfUw",
+  "content_sha": "9be0a335836e31ad540df2babb654a9943e91414ee1f90b5456074aa97903d39",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-005": {
+  "number": 73,
+  "id": 6090584598,
+  "node_id": "I_kwDOVay__s8AAAABawbyFg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfa0",
+  "content_sha": "5b2fcce0e41bfefd9d79acfce1eaee54ad011e37fd43d8a0841d4b12fd2f4ee9",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-006": {
+  "number": 74,
+  "id": 6090586239,
+  "node_id": "I_kwDOVay__s8AAAABawb4fw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfhc",
+  "content_sha": "1fad38a2413e146ec840de65bec934257564fbc6acfd6f806c85a6a19e7e27b3",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 2
+  }
+ },
+ "T-007": {
+  "number": 75,
+  "id": 6090588006,
+  "node_id": "I_kwDOVay__s8AAAABawb_Zg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfnk",
+  "content_sha": "4dbc51859a0ea89de524a1d8d50945b6725a630b498d22bda8f9a924666d9374",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-008": {
+  "number": 76,
+  "id": 6090589814,
+  "node_id": "I_kwDOVay__s8AAAABawcGdg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWft0",
+  "content_sha": "7912202230f0693f9b348aea4c209b523550c2d151ce7e3fda88d2f849686c0f",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-009": {
+  "number": 77,
+  "id": 6090591571,
+  "node_id": "I_kwDOVay__s8AAAABawcNUw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWfzA",
+  "content_sha": "2d489c8391bf3944a049068fd9ab3c74eff93883b911b104ea235b7c688f6223",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 8,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-04",
+   "Start Date": "2026-11-03"
+  },
+  "sim_state": "closed"
+ },
+ "T-010": {
+  "number": 78,
+  "id": 6090593462,
+  "node_id": "I_kwDOVay__s8AAAABawcUtg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWf3o",
+  "content_sha": "e4cfc2c5ea1a58eb866c9ef6d22a37af2e6cc45594c5ebfbf2322ac61726678a",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 11,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-05",
+   "Start Date": "2026-11-04"
+  },
+  "sim_state": "closed"
+ },
+ "T-011": {
+  "number": 79,
+  "id": 6090595330,
+  "node_id": "I_kwDOVay__s8AAAABawccAg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWf8o",
+  "content_sha": "1be9c93e5bbef98d74478798f38829b224f338b14b8081cfb01c538b9532e3f4",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 6
+  }
+ },
+ "T-012": {
+  "number": 80,
+  "id": 6090597055,
+  "node_id": "I_kwDOVay__s8AAAABawcivw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgDk",
+  "content_sha": "5b69d95f40bcedd75350b8f12659a94c1757ee1808a139e4409b87250e4f1093",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 4
+  }
+ },
+ "T-013": {
+  "number": 81,
+  "id": 6090598816,
+  "node_id": "I_kwDOVay__s8AAAABawcpoA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgK4",
+  "content_sha": "b97d01c37bd704997412ad1689dec4b901a74deffeca59b598828efb9a1167ee",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 4
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 10,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-09",
+   "Start Date": "2026-11-06"
+  },
+  "sim_state": "closed"
+ },
+ "T-014": {
+  "number": 82,
+  "id": 6090600446,
+  "node_id": "I_kwDOVay__s8AAAABawcv_g",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgQ0",
+  "content_sha": "97094daca3db92c9dc1d82a7278f07b27604a467decdaed7d3932071cf2a7bbd",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 7,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-10",
+   "Start Date": "2026-11-09"
+  },
+  "sim_state": "closed"
+ },
+ "T-015": {
+  "number": 83,
+  "id": 6090602498,
+  "node_id": "I_kwDOVay__s8AAAABawc4Ag",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgY4",
+  "content_sha": "c70de8d65f74fb788a3871de5898d935d267eed24f8bce69db13770d5cd8cf54",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 4
+  }
+ },
+ "T-016": {
+  "number": 84,
+  "id": 6090604293,
+  "node_id": "I_kwDOVay__s8AAAABawc_BQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgd0",
+  "content_sha": "1cf9b9f72f4bccd3057a9d367172407ee986c56f7a3e9e12b2a975f1dfffde9c",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-017": {
+  "number": 85,
+  "id": 6090606150,
+  "node_id": "I_kwDOVay__s8AAAABawdGRg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgjc",
+  "content_sha": "1266e12d38932e3676c0469d56f8ce299b50956acb9e0f6072926e6bdaa7ad6d",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 5",
+   "SWP": 2
+  }
+ },
+ "T-018": {
+  "number": 86,
+  "id": 6090607943,
+  "node_id": "I_kwDOVay__s8AAAABawdNRw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgpU",
+  "content_sha": "00c08d7d3302058ffb36c31ba1a7a40da698a07718498101581d5934b327af7c",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-019": {
+  "number": 87,
+  "id": 6090609932,
+  "node_id": "I_kwDOVay__s8AAAABawdVDA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWgvE",
+  "content_sha": "b7f262ab5a4ad15ba390988247faeb0eb4eb5461d41fcfe0db50d0e6fa5d50a1",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-020": {
+  "number": 88,
+  "id": 6090611526,
+  "node_id": "I_kwDOVay__s8AAAABawdbRg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWg1A",
+  "content_sha": "c0d0cd83b90312f0553551a0e43c7fa4a3e811961e50def2128ab659dbd402e9",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-021": {
+  "number": 89,
+  "id": 6090613309,
+  "node_id": "I_kwDOVay__s8AAAABawdiPQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWg6U",
+  "content_sha": "3dfd78187444d4c34dbb1d7eb0f5af8b44c5341a0f31ac63ed67637f50a7c2e4",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 4
+  }
+ },
+ "T-022": {
+  "number": 90,
+  "id": 6090615069,
+  "node_id": "I_kwDOVay__s8AAAABawdpHQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhBA",
+  "content_sha": "d54830f6d5b24ec7f3d1d174575a571ceaf0090fbffd637e88a09ec7d5fc618c",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-023": {
+  "number": 91,
+  "id": 6090616944,
+  "node_id": "I_kwDOVay__s8AAAABawdwcA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhHY",
+  "content_sha": "6ca04b8bd63d2c7aad98fcb381028f604afa0a097be117c7c40747d42ee81cc7",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-024": {
+  "number": 92,
+  "id": 6090618563,
+  "node_id": "I_kwDOVay__s8AAAABawd2ww",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhOw",
+  "content_sha": "545c045a4cd895ea3b071f07ff394a81b94a02eca2e4e7af715c1e83939bd37b",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 2
+  }
+ },
+ "T-025": {
+  "number": 93,
+  "id": 6090620402,
+  "node_id": "I_kwDOVay__s8AAAABawd98g",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhVA",
+  "content_sha": "d10a36d4a783890b0aac5308773c5a17a70489f856a1cc1abedd9ed1564dcdc7",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-026": {
+  "number": 94,
+  "id": 6090622215,
+  "node_id": "I_kwDOVay__s8AAAABaweFBw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhbo",
+  "content_sha": "d8a2dcca8507fc6efde528525245cd5777bf1d9f4b825224eedb259e85383b7b",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-027": {
+  "number": 95,
+  "id": 6090623921,
+  "node_id": "I_kwDOVay__s8AAAABaweLsQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhgY",
+  "content_sha": "adac4d1a61dd527fc8fa19379f0dbc0728fa7078472807bc4d24d67505d5e89a",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-028": {
+  "number": 96,
+  "id": 6090625719,
+  "node_id": "I_kwDOVay__s8AAAABaweStw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhno",
+  "content_sha": "bde63961030ddfe76c3f9e014124f98d33b3f100870917cdb8ec2d6362baefb8",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 12,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-03",
+   "Start Date": "2026-11-02"
+  },
+  "sim_state": "closed"
+ },
+ "T-029": {
+  "number": 97,
+  "id": 6090627233,
+  "node_id": "I_kwDOVay__s8AAAABaweYoQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWht4",
+  "content_sha": "7e63898422888f39ca571d5dbc14433e82cc7d1cc63807a270193c19e1843159",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 1",
+   "SWP": 10
+  },
+  "sim_written": {
+   "Status": "In Progress",
+   "Spent time (h)": 30,
+   "Progress (%)": 70,
+   "Due Date": "2026-11-04",
+   "Start Date": "2026-11-02"
+  },
+  "sim_comment_id": 6495711071,
+  "sim_comment_sha": "f240bcbe0e5f14b25041343010415ec7e2abe261286e418ea41520f2b9c23d63"
+ },
+ "T-030": {
+  "number": 98,
+  "id": 6090628983,
+  "node_id": "I_kwDOVay__s8AAAABawefdw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWhzI",
+  "content_sha": "33d57ef253f9b3ab31102d4a7a21d4390291c8e1c589bb091e79e8720d29c5c9",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 12,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-05",
+   "Start Date": "2026-11-04"
+  },
+  "sim_state": "closed"
+ },
+ "T-031": {
+  "number": 99,
+  "id": 6090630824,
+  "node_id": "I_kwDOVay__s8AAAABawemqA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWh6s",
+  "content_sha": "e47bfc830d3a1da8d14461fe94a2aec950d6decf4764c447d0df29158626b744",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 6
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 10,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-06",
+   "Start Date": "2026-11-09"
+  },
+  "sim_state": "closed"
+ },
+ "T-032": {
+  "number": 100,
+  "id": 6090632471,
+  "node_id": "I_kwDOVay__s8AAAABawetFw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWiAk",
+  "content_sha": "0a3ddf8d451125ef153989252271874b6f0ff9ba3dd672954763928ec2370d6d",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 9,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-09",
+   "Start Date": "2026-11-10"
+  },
+  "sim_state": "closed"
+ },
+ "T-033": {
+  "number": 101,
+  "id": 6090634244,
+  "node_id": "I_kwDOVay__s8AAAABawe0BA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWiH8",
+  "content_sha": "f654f0ff35ed6645454742f7d8e841e274c3e942c0d5140fae4e2898b75bb8c2",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "In Progress",
+   "Spent time (h)": 8,
+   "Progress (%)": 50,
+   "Due Date": "2026-11-11",
+   "Start Date": "2026-11-12"
+  },
+  "sim_comment_id": 6495719722,
+  "sim_comment_sha": "a322100f579a718ef1657d45cc49f16a9450a4c452f697a522b5543da32b2ac3"
+ },
+ "T-034": {
+  "number": 102,
+  "id": 6090636019,
+  "node_id": "I_kwDOVay__s8AAAABawe68w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWiPc",
+  "content_sha": "b52e2914a4e378847dc35b31b64e2b2f9a4273bb9ed0a1971582a4dd4911ac00",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "In Progress",
+   "Spent time (h)": 5,
+   "Progress (%)": 30,
+   "Due Date": "2026-11-11",
+   "Start Date": "2026-11-12"
+  },
+  "sim_comment_id": 6495736310,
+  "sim_comment_sha": "37df5fe21fbeea5f639421dfe832001c6c3fdf0dfed106ac71fab0829f1b2b7d"
+ },
+ "T-035": {
+  "number": 103,
+  "id": 6090637833,
+  "node_id": "I_kwDOVay__s8AAAABawfCCQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWiWk",
+  "content_sha": "86309100ceba98d7846b2048cdc34436d85d9199db5e5ff36788b87a4e42f26c",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-036": {
+  "number": 104,
+  "id": 6090639530,
+  "node_id": "I_kwDOVay__s8AAAABawfIqg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWic8",
+  "content_sha": "737d6517424d52234273e97cccb149bedb3c4d068508e074c4341a86528f8fd0",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-037": {
+  "number": 105,
+  "id": 6090641035,
+  "node_id": "I_kwDOVay__s8AAAABawfOiw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWiiU",
+  "content_sha": "c9a1e77beb6881ddd02fa6d04242e767fff36cfe3f1e7a9b5e2fbcfcee343103",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-038": {
+  "number": 106,
+  "id": 6090642999,
+  "node_id": "I_kwDOVay__s8AAAABawfWNw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWiqM",
+  "content_sha": "b499aaba8aa0528b7e028a1fc0707d34c63cd4e11cea38fa9e0fcc8eed26c3c5",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-039": {
+  "number": 107,
+  "id": 6090644875,
+  "node_id": "I_kwDOVay__s8AAAABawfdiw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWi0M",
+  "content_sha": "9cf5b71170cc2b257a80d13dac85ea0c7216ad01b966c2f254b9ed0cce818e51",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-040": {
+  "number": 108,
+  "id": 6090646539,
+  "node_id": "I_kwDOVay__s8AAAABawfkCw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWi6E",
+  "content_sha": "b73db6e26062dce9b5504a815fc40867373396ef0386931a2b78f9365598eb87",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-041": {
+  "number": 109,
+  "id": 6090648210,
+  "node_id": "I_kwDOVay__s8AAAABawfqkg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjAU",
+  "content_sha": "718409fc3c83c7d048c01a6fc0496e54c1b3ee3e026e5d27797a78da7596063b",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-042": {
+  "number": 110,
+  "id": 6090649907,
+  "node_id": "I_kwDOVay__s8AAAABawfxMw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjFo",
+  "content_sha": "2719f76d90cf81fa308f06da829e2ad9fa410e495ce98ca3a1839dcb5d8a6bd9",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-043": {
+  "number": 111,
+  "id": 6090651772,
+  "node_id": "I_kwDOVay__s8AAAABawf4fA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjMA",
+  "content_sha": "e7a5404d54778d27d4e31b4b848262a9bca9e0b800b812c16c246b13f59f35a9",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-044": {
+  "number": 112,
+  "id": 6090653595,
+  "node_id": "I_kwDOVay__s8AAAABawf_mw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjTM",
+  "content_sha": "817dd66aafe2f07a4e2999dcd2fb9ec84f408a0d16372f97cd5bca59616d4291",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 6
+  }
+ },
+ "T-045": {
+  "number": 113,
+  "id": 6090655507,
+  "node_id": "I_kwDOVay__s8AAAABawgHEw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjdQ",
+  "content_sha": "b617545aed7896aa077563e93caf99959d9286ce6650f1b61798eee8440569ff",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 4
+  }
+ },
+ "T-046": {
+  "number": 114,
+  "id": 6090657088,
+  "node_id": "I_kwDOVay__s8AAAABawgNQA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjl4",
+  "content_sha": "231a031438b81b67276755ff98150896e30414836468299b4711e929dbd1c788",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 9
+  }
+ },
+ "T-047": {
+  "number": 115,
+  "id": 6090658777,
+  "node_id": "I_kwDOVay__s8AAAABawgT2Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWjuw",
+  "content_sha": "e27699598c1770c00074b46e37bc175b4d8f6f8a88120148980c04c7a3a81855",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 4
+  }
+ },
+ "T-048": {
+  "number": 116,
+  "id": 6090661053,
+  "node_id": "I_kwDOVay__s8AAAABawgcvQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWj9k",
+  "content_sha": "5e572bd17d4eb9b2ac14b94ae03958b59fa4175c5147d3cf6c20127c31318b45",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-049": {
+  "number": 117,
+  "id": 6090665551,
+  "node_id": "I_kwDOVay__s8AAAABawguTw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkJQ",
+  "content_sha": "59dcff0d874a3a6637a2513f9fb24e6b62f3b92147447bdaa147f631eabfa035",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-050": {
+  "number": 118,
+  "id": 6090667235,
+  "node_id": "I_kwDOVay__s8AAAABawg04w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkOg",
+  "content_sha": "01c46161c5ba2f6f7e02067f1950830145a8e1dd9945567d58016e465d0b1606",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 6
+  }
+ },
+ "T-051": {
+  "number": 119,
+  "id": 6090669024,
+  "node_id": "I_kwDOVay__s8AAAABawg74A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkVU",
+  "content_sha": "768aa1ba47220766865045c816b86e25f7795c370184eb5fa223f7ac7daea874",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-052": {
+  "number": 120,
+  "id": 6090670743,
+  "node_id": "I_kwDOVay__s8AAAABawhClw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWka4",
+  "content_sha": "970e85aafb4f9cf317cea511d02e39e914da66f533d54fcda59e6107a6a18128",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 5
+  }
+ },
+ "T-053": {
+  "number": 121,
+  "id": 6090673216,
+  "node_id": "I_kwDOVay__s8AAAABawhMQA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkiY",
+  "content_sha": "064b7c6bfdbf541e65c05f9eb01cb2101a635754815f07e4240f658b8aae7ba8",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-054": {
+  "number": 122,
+  "id": 6090675073,
+  "node_id": "I_kwDOVay__s8AAAABawhTgQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkoM",
+  "content_sha": "68c1616b33eb21bdfa0e091eb6b6f7cc8f6e1f4d85b62594cf3847830fb1b0bb",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-055": {
+  "number": 123,
+  "id": 6090676737,
+  "node_id": "I_kwDOVay__s8AAAABawhaAQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkts",
+  "content_sha": "31342867f86996376b2c47c03dfca2da079557a15f4aae750ea0814727ae1f68",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-056": {
+  "number": 124,
+  "id": 6090678207,
+  "node_id": "I_kwDOVay__s8AAAABawhfvw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWkz4",
+  "content_sha": "cd64f5f60c2def41d82dbb4d20173ddf0ccc48583532e8ff2cf7d19f59821523",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-057": {
+  "number": 125,
+  "id": 6090679650,
+  "node_id": "I_kwDOVay__s8AAAABawhlYg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWk5Q",
+  "content_sha": "126439514de88a59e154a15bb777ce027c9b7466bb566d6c0eb1e6be64126cbf",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-058": {
+  "number": 126,
+  "id": 6090681313,
+  "node_id": "I_kwDOVay__s8AAAABawhr4Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlAE",
+  "content_sha": "6aaa6e25b5e50cab1cefe0c5f5b85de0f04611167e99bc60bf09720fe36076ee",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-059": {
+  "number": 127,
+  "id": 6090683043,
+  "node_id": "I_kwDOVay__s8AAAABawhyow",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlHI",
+  "content_sha": "7927a4dd0d5c85fd4e00e31dc97c7147344910b707d7e04e893619abd2c3f85e",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-060": {
+  "number": 128,
+  "id": 6090684704,
+  "node_id": "I_kwDOVay__s8AAAABawh5IA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlNo",
+  "content_sha": "e0696de91cb4fd2d159dd340b49b7f6becb4070b85ccca0cdfb509b57a72fa73",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-061": {
+  "number": 129,
+  "id": 6090686467,
+  "node_id": "I_kwDOVay__s8AAAABawiAAw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlUg",
+  "content_sha": "d57b89821cc9867731d4c489e235ffc60507f9b0481485268eb631f77f78d860",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-062": {
+  "number": 130,
+  "id": 6090688261,
+  "node_id": "I_kwDOVay__s8AAAABawiHBQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWldU",
+  "content_sha": "9800bb5c2b6c539282c9ac077629e177152e2985a5ee109a12d278ea3c326eea",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 4
+  }
+ },
+ "T-063": {
+  "number": 131,
+  "id": 6090690111,
+  "node_id": "I_kwDOVay__s8AAAABawiOPw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlk0",
+  "content_sha": "013477ef9558f39347f44afb0a0321eabddae2eecd0b562bfa41bda1a3985049",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 5
+  }
+ },
+ "T-064": {
+  "number": 132,
+  "id": 6090691883,
+  "node_id": "I_kwDOVay__s8AAAABawiVKw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlrQ",
+  "content_sha": "a7b2ffb3a0d8c7e10836d9512e149292830efb221aaed1b6101f93ca0b96c4e3",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-065": {
+  "number": 133,
+  "id": 6090693476,
+  "node_id": "I_kwDOVay__s8AAAABawibZA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWlw0",
+  "content_sha": "d8793303e2740927460bd07ce275937355c93576f28c908e0c8f9efd989700b3",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-066": {
+  "number": 134,
+  "id": 6090695435,
+  "node_id": "I_kwDOVay__s8AAAABawijCw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWl4g",
+  "content_sha": "fb525c56755162d8ff79269b7c4fb1cef8fa05dded492ea6b41a5e5f84bfc49c",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-067": {
+  "number": 135,
+  "id": 6090697326,
+  "node_id": "I_kwDOVay__s8AAAABawiqbg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmAs",
+  "content_sha": "c9bac3d1f1ab61f502717d4dc00b89077bc14542f589b2c7a86b3eca8cf25f70",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 5
+  }
+ },
+ "T-068": {
+  "number": 136,
+  "id": 6090699052,
+  "node_id": "I_kwDOVay__s8AAAABawixLA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmII",
+  "content_sha": "d7ef73cc9e0671afa554857fe9d0459297fa8912d52ff838eb32ba959194bfef",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 4
+  }
+ },
+ "T-069": {
+  "number": 137,
+  "id": 6090700976,
+  "node_id": "I_kwDOVay__s8AAAABawi4sA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmPs",
+  "content_sha": "6aa808ed1bd52efb6d37777323346aca547ede18abfc8c45c586545063327627",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 5
+  }
+ },
+ "T-070": {
+  "number": 138,
+  "id": 6090702695,
+  "node_id": "I_kwDOVay__s8AAAABawi_Zw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmVg",
+  "content_sha": "aa6a8a2cf6bec6fdf06e60cd701965d93bac5211f8c9c28df976e5407b09a0eb",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 5
+  }
+ },
+ "T-071": {
+  "number": 139,
+  "id": 6090704446,
+  "node_id": "I_kwDOVay__s8AAAABawjGPg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmZo",
+  "content_sha": "cc20a094d8751dc5494ac49ecd6d3f379ed0ef6bf98f7af943fc42715b91848e",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-072": {
+  "number": 140,
+  "id": 6090706026,
+  "node_id": "I_kwDOVay__s8AAAABawjMag",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmgw",
+  "content_sha": "f43b25b14c3f8c7d48043c46851728fc281b72996531487bc65676f940b48522",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 4
+  }
+ },
+ "T-073": {
+  "number": 141,
+  "id": 6090707646,
+  "node_id": "I_kwDOVay__s8AAAABawjSvg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmng",
+  "content_sha": "558d8ba319cd1d7c5bb32b6f4b9c5c39030158a35899391ebebafece91971b93",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-074": {
+  "number": 142,
+  "id": 6090709231,
+  "node_id": "I_kwDOVay__s8AAAABawjY7w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWmvU",
+  "content_sha": "8acdf8ee2924f21016dc6d79573bec5e13c1e156ce6cc7c709a76aaa5466ff52",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 2
+  }
+ },
+ "T-075": {
+  "number": 143,
+  "id": 6090711356,
+  "node_id": "I_kwDOVay__s8AAAABawjhPA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWm4M",
+  "content_sha": "54da2c46c76d59a5cc23d96ab1b708fde8b9662c5e3944333c37251eece7b631",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-076": {
+  "number": 144,
+  "id": 6090713515,
+  "node_id": "I_kwDOVay__s8AAAABawjpqw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWnAA",
+  "content_sha": "4f9b7f1fc1c7109e8a9c45d6d19960a378be65d83e6fdd73afd114d451cc02ed",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 5",
+   "SWP": 6
+  }
+ },
+ "T-077": {
+  "number": 145,
+  "id": 6090715094,
+  "node_id": "I_kwDOVay__s8AAAABawjv1g",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWnIA",
+  "content_sha": "012bd56d11ffc1c5d181033b7f64f51f4ce2f7575d1969c56e591b8d1c1769ac",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 16,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-13",
+   "Start Date": "2026-11-11"
+  },
+  "sim_state": "closed"
+ },
+ "T-078": {
+  "number": 146,
+  "id": 6090716867,
+  "node_id": "I_kwDOVay__s8AAAABawj2ww",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWnOU",
+  "content_sha": "152381549550be2401df562e3a281fd309f1a1f37568e22f733b3de705852248",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 11,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-06",
+   "Start Date": "2026-11-06"
+  },
+  "sim_state": "closed"
+ },
+ "T-079": {
+  "number": 147,
+  "id": 6090718789,
+  "node_id": "I_kwDOVay__s8AAAABawj-RQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWnVA",
+  "content_sha": "41bcc064cf836bc6f2bf0a2854bff876da43554f8596162d0876d0ebdbeb57bd",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 10,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-13",
+   "Start Date": "2026-11-12"
+  },
+  "sim_state": "closed"
+ },
+ "T-080": {
+  "number": 148,
+  "id": 6090720348,
+  "node_id": "I_kwDOVay__s8AAAABawkEXA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWnbM",
+  "content_sha": "063c6b2820064df3e8b211202e40e03ef3c76f2fd6eec6284e6cdcbf0238ccae",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 24,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-06",
+   "Start Date": "2026-11-04"
+  },
+  "sim_state": "closed"
+ },
+ "T-081": {
+  "number": 149,
+  "id": 6090722132,
+  "node_id": "I_kwDOVay__s8AAAABawkLVA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWniQ",
+  "content_sha": "6924bf017cced6517eff7b0d8415307237659a8bbb09805d3ec8bd34af3ca704",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-082": {
+  "number": 150,
+  "id": 6090723920,
+  "node_id": "I_kwDOVay__s8AAAABawkSUA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWnrg",
+  "content_sha": "72ca6a887de4a98a2989d8057ee5cf3174275485328ff52d6c456dc5ecaaecd9",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 6
+  }
+ },
+ "T-083": {
+  "number": 151,
+  "id": 6090725680,
+  "node_id": "I_kwDOVay__s8AAAABawkZMA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWny8",
+  "content_sha": "c99316e8aeddd75bd18e6b0f0381d18c1ba0b1c4caa5513efcc1567fdc2378de",
+  "fields_written": {
+   "Estimate (h)": 20,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-084": {
+  "number": 152,
+  "id": 6090727305,
+  "node_id": "I_kwDOVay__s8AAAABawkfiQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWn6I",
+  "content_sha": "7f4fe745664229a6931e61bdad830bcd447bcdc22439e27425b48046df8e0771",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-085": {
+  "number": 153,
+  "id": 6090729258,
+  "node_id": "I_kwDOVay__s8AAAABawknKg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWoA8",
+  "content_sha": "59cf506911188903acd90326e579ba1d9aac7ef23bbe3fdbd1ffb16dbdc3f701",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-086": {
+  "number": 154,
+  "id": 6090730893,
+  "node_id": "I_kwDOVay__s8AAAABawktjQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWoHM",
+  "content_sha": "fb446cbf56bb2cde3a892c11d603b052009483cd46649d21c5b67388b1949f5d",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-087": {
+  "number": 155,
+  "id": 6090732514,
+  "node_id": "I_kwDOVay__s8AAAABawkz4g",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWoNY",
+  "content_sha": "c3c536cdf2cc197d0e0a84d2632c0fbefd13120bb12655c6885dbc96f0dce9bf",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-088": {
+  "number": 156,
+  "id": 6090734175,
+  "node_id": "I_kwDOVay__s8AAAABawk6Xw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWoU4",
+  "content_sha": "ea2d91f5237490f709846fcb697fa19e1274d4cfa67c3c4d852c1c6f3480a2b1",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "FE-2",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 2
+  }
+ },
+ "T-089": {
+  "number": 157,
+  "id": 6090735791,
+  "node_id": "I_kwDOVay__s8AAAABawlArw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWoa4",
+  "content_sha": "fc758c1705c1f1f7b59f63bfe8c45cda2542c9243ff467141e9d79e2e261db7d",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-090": {
+  "number": 158,
+  "id": 6090737680,
+  "node_id": "I_kwDOVay__s8AAAABawlIEA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWogk",
+  "content_sha": "d1532aa5e7f0f677ca3a57e569fc8091843b4070c5d5c6b6124922d25380d032",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 6
+  }
+ },
+ "T-091": {
+  "number": 159,
+  "id": 6090739479,
+  "node_id": "I_kwDOVay__s8AAAABawlPFw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWonA",
+  "content_sha": "57c16fac401dfd9892a108af9be6a2587e0f606ba8df0bb75d90754f2b02add1",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-092": {
+  "number": 160,
+  "id": 6090741130,
+  "node_id": "I_kwDOVay__s8AAAABawlVig",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWotc",
+  "content_sha": "b2facbe5641d5104b4f21aaad5fcee6405ecbcf22119fc312f2375997d16906a",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-093": {
+  "number": 161,
+  "id": 6090742872,
+  "node_id": "I_kwDOVay__s8AAAABawlcWA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWoz4",
+  "content_sha": "2c4934560225e1d772e0be55415b58f985366d2ce04e015997e34fef1e894769",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-094": {
+  "number": 162,
+  "id": 6090744487,
+  "node_id": "I_kwDOVay__s8AAAABawlipw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWo6A",
+  "content_sha": "4b5056e62cb0c2d19fb6863110daa466a2889f1ddb9fd6e2b3a82a83f067fdca",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 6",
+   "SWP": 6
+  }
+ },
+ "T-095": {
+  "number": 163,
+  "id": 6090746252,
+  "node_id": "I_kwDOVay__s8AAAABawlpjA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpAw",
+  "content_sha": "c5a39f92dbc6b743f070a2449027067692b26de3d9485ff6e40ff7012b40ff41",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-096": {
+  "number": 164,
+  "id": 6090748008,
+  "node_id": "I_kwDOVay__s8AAAABawlwaA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpGo",
+  "content_sha": "281f8ede239533bc0d3224979072263388eb54b8971e979bc8cfd6bc55526d78",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-097": {
+  "number": 165,
+  "id": 6090749874,
+  "node_id": "I_kwDOVay__s8AAAABawl3sg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpL8",
+  "content_sha": "5a42732a0b84353cdbd0dc27a2390c60fcef4c7417a640f0bd34e17532023d18",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-098": {
+  "number": 166,
+  "id": 6090751399,
+  "node_id": "I_kwDOVay__s8AAAABawl9pw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpQI",
+  "content_sha": "be4c4692cc43e6073f0412c80ff09920b56d3c0d0fcdc50627263696059a7922",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 4
+  }
+ },
+ "T-099": {
+  "number": 167,
+  "id": 6090752996,
+  "node_id": "I_kwDOVay__s8AAAABawmD5A",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpUU",
+  "content_sha": "ffef278b5bd68439a0a9e6f7fcfb6fd045ef34eda77b197dc3811291c6259e34",
+  "fields_written": {
+   "Estimate (h)": 18,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-100": {
+  "number": 168,
+  "id": 6090754618,
+  "node_id": "I_kwDOVay__s8AAAABawmKOg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpZc",
+  "content_sha": "17a40b9b661800008d07f4a9bd2cae3c6cd40e40ab1ef7769797af59f44ed974",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 6
+  },
+  "sim_written": {
+   "Status": "In Progress",
+   "Spent time (h)": 6,
+   "Progress (%)": 40,
+   "Due Date": "2026-11-10",
+   "Start Date": "2026-11-09"
+  },
+  "sim_comment_id": 6495704675,
+  "sim_comment_sha": "58c04feee56585527496786669a1e1c34883e7c89d42c6cd5d0f46a8ef0f03ad"
+ },
+ "T-101": {
+  "number": 169,
+  "id": 6090756201,
+  "node_id": "I_kwDOVay__s8AAAABawmQaQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpgo",
+  "content_sha": "0f3d741e3c60ed79cfbb67d4658ddb3942d0e7a8ce9a9a59624d3ee79d387593",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 12,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-12",
+   "Start Date": "2026-11-10"
+  },
+  "sim_state": "closed"
+ },
+ "T-102": {
+  "number": 170,
+  "id": 6090758063,
+  "node_id": "I_kwDOVay__s8AAAABawmXrw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpns",
+  "content_sha": "579fdf9475d3924c26348194145dd29aee21692be1a26706641fd647f5c19742",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 12,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-05",
+   "Start Date": "2026-11-05"
+  },
+  "sim_state": "closed"
+ },
+ "T-103": {
+  "number": 171,
+  "id": 6090759712,
+  "node_id": "I_kwDOVay__s8AAAABawmeIA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWpvo",
+  "content_sha": "cfaa58b03220098dd7d4fe230c4d3123a13273a315dad4904f06c802ecc49971",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "FE-1",
+   "Công đoạn": "3. FE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 4
+  },
+  "sim_written": {
+   "Status": "Todo",
+   "Spent time (h)": 0,
+   "Progress (%)": 0,
+   "Due Date": "2026-11-13"
+  },
+  "sim_comment_id": 6495733448,
+  "sim_comment_sha": "bd5ab0f000f83e6fed0ab7f637b94cbea92f55cc387b9200f98d03e7d293c8a7"
+ },
+ "T-104": {
+  "number": 172,
+  "id": 6090761338,
+  "node_id": "I_kwDOVay__s8AAAABawmkeg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWp60",
+  "content_sha": "d35dbfe839d80d19eddfc93dddc249d64ebf24b6bd16e3d5edf318d6bf4e0dfa",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-105": {
+  "number": 173,
+  "id": 6090763739,
+  "node_id": "I_kwDOVay__s8AAAABawmt2w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqCg",
+  "content_sha": "3aff497bcaf91dd465c991036ed4f5adaf4d7de5a8dd9054a873c4914a60b24b",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-106": {
+  "number": 174,
+  "id": 6090765305,
+  "node_id": "I_kwDOVay__s8AAAABawmz-Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqLA",
+  "content_sha": "8ab9bcf8f24269dd56203cab1f2c5cf04e91ef3534531ce637d0aa2d7084442a",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 6
+  }
+ },
+ "T-107": {
+  "number": 175,
+  "id": 6090766990,
+  "node_id": "I_kwDOVay__s8AAAABawm6jg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqR8",
+  "content_sha": "40ce991ae49aa1d14c15e999e138f5f3adda2d7baa21aa9ae5d85dc29969a60d",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-108": {
+  "number": 176,
+  "id": 6090768791,
+  "node_id": "I_kwDOVay__s8AAAABawnBlw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqZ0",
+  "content_sha": "6e89cb8155571e6a416aaa49d0a84b25e28ac6d9669e06d8afd99ea6ba4ea5a0",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-109": {
+  "number": 177,
+  "id": 6090770355,
+  "node_id": "I_kwDOVay__s8AAAABawnHsw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqhg",
+  "content_sha": "5983b20f0cba9df77a0f1e58b24d1889ece7f6a21cc96c1fa3e1cb4a6f700d34",
+  "fields_written": {
+   "Estimate (h)": 24,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 2",
+   "SWP": 6
+  }
+ },
+ "T-110": {
+  "number": 178,
+  "id": 6090771925,
+  "node_id": "I_kwDOVay__s8AAAABawnN1Q",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqoE",
+  "content_sha": "95eacde6f139eb97ae420aea7aced3dabfb222d32c33d20092424dd575d31db3",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-111": {
+  "number": 179,
+  "id": 6090773519,
+  "node_id": "I_kwDOVay__s8AAAABawnUDw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWqv0",
+  "content_sha": "c841e6491a5c5acc8d3b938a5d18207e15dd851c8e8b79fb136b777f2acf25f9",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-112": {
+  "number": 180,
+  "id": 6090775741,
+  "node_id": "I_kwDOVay__s8AAAABawncvQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWq4s",
+  "content_sha": "d605c570442be2beec2b2c75d79ab604554c88dbf24c596b3c3eedc9fb500ad0",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-113": {
+  "number": 181,
+  "id": 6090777310,
+  "node_id": "I_kwDOVay__s8AAAABawni3g",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWq_0",
+  "content_sha": "aa2fc08827f9344e7d6647d0c3ba50eaab2a3ea55549e0772f449159ba641fc5",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-114": {
+  "number": 182,
+  "id": 6090778962,
+  "node_id": "I_kwDOVay__s8AAAABawnpUg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrFI",
+  "content_sha": "ff4e0003122c41b81444babde047795b8a59b9812aa3da951c10bd27ec7120f1",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 4
+  }
+ },
+ "T-115": {
+  "number": 183,
+  "id": 6090780577,
+  "node_id": "I_kwDOVay__s8AAAABawnvoQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrI8",
+  "content_sha": "d69f0cf2889797995ead51f13783d25116a419bf3646cb8271e7290894fd6967",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 6
+  }
+ },
+ "T-116": {
+  "number": 184,
+  "id": 6090781979,
+  "node_id": "I_kwDOVay__s8AAAABawn1Gw",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrOs",
+  "content_sha": "1dd0fad4e797e5d7141c05854e94230989c64625076f00baf01c3fd4a06cb612",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "High",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-117": {
+  "number": 185,
+  "id": 6090783901,
+  "node_id": "I_kwDOVay__s8AAAABawn8nQ",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrUk",
+  "content_sha": "e2d47efdad4b1e0e8dbf51c5a092e4ea9a3cf424542d891c030ec465c1da9d01",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 4
+  }
+ },
+ "T-118": {
+  "number": 186,
+  "id": 6090785800,
+  "node_id": "I_kwDOVay__s8AAAABawoECA",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrbQ",
+  "content_sha": "9c403e969ca85bbbd8fefe6cbdf644df689c100afaafdf3b0c0c17e8f5003ecb",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "BE-2",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 6
+  }
+ },
+ "T-119": {
+  "number": 187,
+  "id": 6090787482,
+  "node_id": "I_kwDOVay__s8AAAABawoKmg",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrhU",
+  "content_sha": "9238fd0b93d28cc4d481b7fd70c013e6dc64bc319dd46c57ecd3d2e3fdc6d566",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-120": {
+  "number": 188,
+  "id": 6090789099,
+  "node_id": "I_kwDOVay__s8AAAABawoQ6w",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEWrnc",
+  "content_sha": "2a4d1bffab65359815f49b0c3992c0730d5171a4cbaafdfd84d95531d1ddfbcf",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "BE-3",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-121": {
+  "number": 189,
+  "id": 6099126196,
+  "node_id": "I_kwDOVay__s8AAAABa4lHtA",
+  "content_sha": "c4b6038e434225dc52b253a12f3013b048c4080c4a85f3ec56ccf77dc1d40177",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeRkc",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 6,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-04",
+   "Start Date": "2026-11-04"
+  },
+  "sim_state": "closed"
+ },
+ "T-122": {
+  "number": 190,
+  "id": 6099129783,
+  "node_id": "I_kwDOVay__s8AAAABa4lVtw",
+  "content_sha": "a57b3f3cbbef26c7622b329be1c90eb0e714e6280244b8e20590f7d542e4e767",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeRu8",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-123": {
+  "number": 191,
+  "id": 6099133591,
+  "node_id": "I_kwDOVay__s8AAAABa4lklw",
+  "content_sha": "c4f98483ad6f3307cb32d0f473a03d15fdac9bdfb58eff13c742611aa1398ba3",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeR6I",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-124": {
+  "number": 192,
+  "id": 6099137774,
+  "node_id": "I_kwDOVay__s8AAAABa4l07g",
+  "content_sha": "9fcdf92d77fa8afbcac23afef4c1065149dc0ba2eeb1f7fbe715837c5b14e9aa",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeSIY",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 7,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-06",
+   "Start Date": "2026-11-06"
+  },
+  "sim_state": "closed"
+ },
+ "T-125": {
+  "number": 193,
+  "id": 6099142231,
+  "node_id": "I_kwDOVay__s8AAAABa4mGVw",
+  "content_sha": "715194d6f32675486fcfba0a1679239065fd2947ef954bd919cc7da21c02d8f3",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeSXY",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 4
+  }
+ },
+ "T-126": {
+  "number": 194,
+  "id": 6099145850,
+  "node_id": "I_kwDOVay__s8AAAABa4mUeg",
+  "content_sha": "27022aea7427f30e0b650f07744939b8f8dcb0388bc8456d568301e7a4c99af6",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeSjk",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 3
+  },
+  "sim_written": {
+   "Status": "Done",
+   "Spent time (h)": 6,
+   "Progress (%)": 100,
+   "Due Date": "2026-11-11",
+   "Start Date": "2026-11-11"
+  },
+  "sim_state": "closed"
+ },
+ "T-127": {
+  "number": 195,
+  "id": 6099149330,
+  "node_id": "I_kwDOVay__s8AAAABa4miEg",
+  "content_sha": "fd45f1876c7c0ec2f8a930b242d6cb0922000db61c5ef8d54e2be95740455cfb",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeSvs",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-128": {
+  "number": 196,
+  "id": 6099153219,
+  "node_id": "I_kwDOVay__s8AAAABa4mxQw",
+  "content_sha": "7421e535dab5b99f07efa0f045235b692c9fab6419051c45034735a76b8db247",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeS8U",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-129": {
+  "number": 197,
+  "id": 6099157252,
+  "node_id": "I_kwDOVay__s8AAAABa4nBBA",
+  "content_sha": "de174d99c8bce4760c657d30ab1e3231324af3cc60ab15957555825e056a7e4d",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeTIE",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-130": {
+  "number": 198,
+  "id": 6099161203,
+  "node_id": "I_kwDOVay__s8AAAABa4nQcw",
+  "content_sha": "d465d1fe0f7cff94847cfcb8a50ec3ea59b2a6577194ab9747e285e961245385",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeTUM",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-131": {
+  "number": 199,
+  "id": 6099165092,
+  "node_id": "I_kwDOVay__s8AAAABa4nfpA",
+  "content_sha": "2d4ad8b692bc4dee1ead784fcfd038b3dce11075eb29130da00182c31904638f",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeTiY",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-132": {
+  "number": 200,
+  "id": 6099169095,
+  "node_id": "I_kwDOVay__s8AAAABa4nvRw",
+  "content_sha": "4237f364706a7254637bd8a1aef9c850deb1695cd7b986c3e18520b176efe23c",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeT0s",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 4
+  }
+ },
+ "T-133": {
+  "number": 201,
+  "id": 6099173097,
+  "node_id": "I_kwDOVay__s8AAAABa4n-6Q",
+  "content_sha": "6b629058734c5703a488b1b46ee5f1e6d1ea1c18d1d11ca49090b423871336fa",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeUHk",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 4
+  }
+ },
+ "T-134": {
+  "number": 202,
+  "id": 6099177940,
+  "node_id": "I_kwDOVay__s8AAAABa4oR1A",
+  "content_sha": "4d7ee969df60bd3b0421c3ca54c0b0044e35502675dba4d52e68f1babcd063d8",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeUgY",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 4
+  }
+ },
+ "T-135": {
+  "number": 203,
+  "id": 6099181829,
+  "node_id": "I_kwDOVay__s8AAAABa4ohBQ",
+  "content_sha": "6bd1e96a4651ff238d2748983d2483dbcf1475ddec441c5e9c7bd317028865ea",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeUwU",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-136": {
+  "number": 204,
+  "id": 6099185715,
+  "node_id": "I_kwDOVay__s8AAAABa4owMw",
+  "content_sha": "f038fb860213239936d0869ad2282d268816c63308b228ececbb2d110e1ebe6c",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeVAI",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-137": {
+  "number": 205,
+  "id": 6099189500,
+  "node_id": "I_kwDOVay__s8AAAABa4o-_A",
+  "content_sha": "7a55fd43f2e785404312d8811ffaf9ef8561ecc4120ec0eccba347c708d4adbc",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeVPQ",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-138": {
+  "number": 206,
+  "id": 6099193073,
+  "node_id": "I_kwDOVay__s8AAAABa4pM8Q",
+  "content_sha": "8e47e0c94697529175487ee1e52f7cc8929cab39f533f9524ea9fe089902b6d4",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeVhE",
+  "fields_written": {
+   "Estimate (h)": 22,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 10
+  }
+ },
+ "T-139": {
+  "number": 207,
+  "id": 6099196840,
+  "node_id": "I_kwDOVay__s8AAAABa4pbqA",
+  "content_sha": "85a99ba10c98882e73cffcbd76af8db66bb47c65b4a6488b0b0368882ea93ca7",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeVy8",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-140": {
+  "number": 208,
+  "id": 6099201266,
+  "node_id": "I_kwDOVay__s8AAAABa4ps8g",
+  "content_sha": "ed5a72b49116b48d8571801e5febe7eeab7d7e327320922d434bbec8d247541d",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeWEY",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 3
+  }
+ },
+ "T-141": {
+  "number": 209,
+  "id": 6099204869,
+  "node_id": "I_kwDOVay__s8AAAABa4p7BQ",
+  "content_sha": "e6f8734d24f64e15e60cf3fdea61c2228f8e3bba7007202db631628c716b0126",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeWTY",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 3",
+   "SWP": 5
+  }
+ },
+ "T-142": {
+  "number": 210,
+  "id": 6099208681,
+  "node_id": "I_kwDOVay__s8AAAABa4qJ6Q",
+  "content_sha": "1fd12de1f1629d1ab392cb0548df369ba3eb9e79efbc74ae5c3b4b07f624928e",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeWgY",
+  "fields_written": {
+   "Estimate (h)": 22,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 8
+  }
+ },
+ "T-143": {
+  "number": 211,
+  "id": 6099212096,
+  "node_id": "I_kwDOVay__s8AAAABa4qXQA",
+  "content_sha": "663c9656543e3273c4826b90d29d7ccfc86f677aae595be777225a75e5f78834",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeWrA",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 4",
+   "SWP": 8
+  }
+ },
+ "T-144": {
+  "number": 212,
+  "id": 6099215736,
+  "node_id": "I_kwDOVay__s8AAAABa4qleA",
+  "content_sha": "613c967baa0ff0a0d6344d66e99ff52b6bde3daa4e4bb6bde2a4ef6ec042f88d",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeW4U",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 3
+  }
+ },
+ "T-145": {
+  "number": 213,
+  "id": 6099219270,
+  "node_id": "I_kwDOVay__s8AAAABa4qzRg",
+  "content_sha": "463d9f577d5f11d0d73b2194e65c2b947ef9df80e850b5d4424473ba26273ee8",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeXEA",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-146": {
+  "number": 214,
+  "id": 6099223122,
+  "node_id": "I_kwDOVay__s8AAAABa4rCUg",
+  "content_sha": "52afd656e0ef2916264a25c88beb010f7c0cc9e500c02f6f7b1f7ab6cc10ebd2",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeXTE",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 5",
+   "SWP": 5
+  }
+ },
+ "T-147": {
+  "number": 215,
+  "id": 6099226689,
+  "node_id": "I_kwDOVay__s8AAAABa4rQQQ",
+  "content_sha": "6eccc53f0bd04b3886cbb78b5f624cb7284ada771d0e6ac8fdae8ff83bc957a6",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeXiQ",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 5
+  },
+  "sim_written": {
+   "Status": "In Progress",
+   "Spent time (h)": 8,
+   "Progress (%)": 50,
+   "Due Date": "2026-11-13",
+   "Start Date": "2026-11-12"
+  },
+  "sim_comment_id": 6496255757,
+  "sim_comment_sha": "7c371f83625f7d531834ea9c6793fc5f94750bbb22648b06c1d97fe8f407672e"
+ },
+ "T-148": {
+  "number": 216,
+  "id": 6099230443,
+  "node_id": "I_kwDOVay__s8AAAABa4re6w",
+  "content_sha": "c9877c5cc8f11eda398617ed5072f46ed5a0f40802ad8316b99bb5c9413f1829",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeXyE",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-149": {
+  "number": 217,
+  "id": 6099233861,
+  "node_id": "I_kwDOVay__s8AAAABa4rsRQ",
+  "content_sha": "4ae4357d30115bff3217a248f6107a3d1ac1520efbd6f50a7225ab1c88c540af",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeYDA",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-150": {
+  "number": 218,
+  "id": 6099237524,
+  "node_id": "I_kwDOVay__s8AAAABa4r6lA",
+  "content_sha": "2c56a06bbb70888730829151f11056ca27e28cc17fafb726d94729c77331e18a",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeYWg",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-151": {
+  "number": 219,
+  "id": 6099241405,
+  "node_id": "I_kwDOVay__s8AAAABa4sJvQ",
+  "content_sha": "0369b8895c4cf2e5dbec4fd111c5329b13b9906257301b52e98e638be52bd3c8",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeYrA",
+  "fields_written": {
+   "Estimate (h)": 12,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 8
+  }
+ },
+ "T-152": {
+  "number": 220,
+  "id": 6099246183,
+  "node_id": "I_kwDOVay__s8AAAABa4scZw",
+  "content_sha": "c94e627d0511c51fc75606e3851b5268ddbb5f63e81f8afaa80e9cba46458362",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeZBs",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 5",
+   "SWP": 3
+  }
+ },
+ "T-153": {
+  "number": 221,
+  "id": 6099249446,
+  "node_id": "I_kwDOVay__s8AAAABa4spJg",
+  "content_sha": "f44113547f979c6822c72f9be48f7af974824f9744fc61e18ff95271aeeb3e99",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeZQQ",
+  "fields_written": {
+   "Estimate (h)": 10,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 6",
+   "SWP": 5
+  }
+ },
+ "T-154": {
+  "number": 222,
+  "id": 6099253280,
+  "node_id": "I_kwDOVay__s8AAAABa4s4IA",
+  "content_sha": "16ca166df2e5f161300116e4118898bb3a595d6184016829d7e78c24781c06cc",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeZfo",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-155": {
+  "number": 223,
+  "id": 6099256829,
+  "node_id": "I_kwDOVay__s8AAAABa4tF_Q",
+  "content_sha": "3b7c7fda291b6c14ce979c995ed720657b2410a16737c19be2ca8976b2207bd6",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeZwM",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 3
+  }
+ },
+ "T-156": {
+  "number": 224,
+  "id": 6099260706,
+  "node_id": "I_kwDOVay__s8AAAABa4tVIg",
+  "content_sha": "a572afd7905b6cce39680a14707a3d48b54760f4b78877f6bdfe84623439b2d5",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeZ_4",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 4
+  }
+ },
+ "T-157": {
+  "number": 225,
+  "id": 6099264450,
+  "node_id": "I_kwDOVay__s8AAAABa4tjwg",
+  "content_sha": "2a70d725cb6901eb1e454654f8b913961c020927841542b52080fc28a8c12c98",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeaPk",
+  "fields_written": {
+   "Estimate (h)": 14,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 1",
+   "SWP": 8
+  },
+  "sim_written": {
+   "Status": "In Progress",
+   "Spent time (h)": 4,
+   "Progress (%)": 30,
+   "Due Date": "2026-11-13",
+   "Start Date": "2026-11-12"
+  },
+  "sim_comment_id": 6496258491,
+  "sim_comment_sha": "d713d31a4fcd4f4b055504b6944c3cee93d57734e1b1e2158012fe3c158c3498"
+ },
+ "T-158": {
+  "number": 226,
+  "id": 6099268387,
+  "node_id": "I_kwDOVay__s8AAAABa4tzIw",
+  "content_sha": "5dbfd0430566b2fb9a9b4549b8d5da54322502e4bf2a4f72aa745b0fbb8aeb7c",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeae8",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-159": {
+  "number": 227,
+  "id": 6099272515,
+  "node_id": "I_kwDOVay__s8AAAABa4uDQw",
+  "content_sha": "cd5498b0592312fb830f611432c1bdc9ebe0acccbb509a70f2c26845fac29dc7",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeau4",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 4
+  }
+ },
+ "T-160": {
+  "number": 228,
+  "id": 6099276671,
+  "node_id": "I_kwDOVay__s8AAAABa4uTfw",
+  "content_sha": "19b83a78864ef0132f6160316f7971585503078f67057af220f067fb48ac1271",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEea_I",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 5
+  }
+ },
+ "T-161": {
+  "number": 229,
+  "id": 6099281073,
+  "node_id": "I_kwDOVay__s8AAAABa4uksQ",
+  "content_sha": "4ef2fe42e5133a6e10a8a49807c4f33b574291999d105d96ef85c8ee31310a60",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEebQQ",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 3
+  }
+ },
+ "T-162": {
+  "number": 230,
+  "id": 6099285412,
+  "node_id": "I_kwDOVay__s8AAAABa4u1pA",
+  "content_sha": "ad15349d21410844d57e5fa2ed0b8b21dabe89120743fcc96790002484993816",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEebiE",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 4",
+   "SWP": 4
+  }
+ },
+ "T-163": {
+  "number": 231,
+  "id": 6099289431,
+  "node_id": "I_kwDOVay__s8AAAABa4vFVw",
+  "content_sha": "33c15e232d4d881b41a3377a878ccc410c258d6f2b3728e0a23de4dd99f4d45d",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEebvk",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 6",
+   "SWP": 4
+  }
+ },
+ "T-164": {
+  "number": 232,
+  "id": 6099293338,
+  "node_id": "I_kwDOVay__s8AAAABa4vUmg",
+  "content_sha": "b5d32cda5e67e6c69ac5c6b617b5f80a3ab925e358f0a92f71ca35de1caf63d6",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEeb94",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "High",
+   "Iteration": "Sprint 2",
+   "SWP": 6
+  }
+ },
+ "T-165": {
+  "number": 233,
+  "id": 6099297501,
+  "node_id": "I_kwDOVay__s8AAAABa4vk3Q",
+  "content_sha": "e0663792ac450b0a38896f257468f695783b32cd87e4f154ebe2c58d4e585752",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEecO0",
+  "fields_written": {
+   "Estimate (h)": 4,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 4
+  }
+ },
+ "T-166": {
+  "number": 234,
+  "id": 6099301661,
+  "node_id": "I_kwDOVay__s8AAAABa4v1HQ",
+  "content_sha": "016dc85daf3b02d98c235825c426578db2cf1768b25dfe9eaabb3575977e124e",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEecbc",
+  "fields_written": {
+   "Estimate (h)": 6,
+   "Status": "Todo",
+   "PIC": "QA-2",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2",
+   "SWP": 4
+  }
+ },
+ "T-168": {
+  "number": 235,
+  "id": 6102782259,
+  "node_id": "I_kwDOVay__s8AAAABa8ERMw",
+  "content_sha": "fa1509f8aae21f7c091e7d57b44d52f87f0500e6d677b2a97a18e5eb19c9fa74",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEhif8",
+  "fields_written": {
+   "Estimate (h)": 16,
+   "Status": "Todo",
+   "SWP": 6,
+   "PIC": "QA-1",
+   "Công đoạn": "4. QA tạo",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2"
+  }
+ },
+ "T-167": {
+  "number": 236,
+  "id": 6102787750,
+  "node_id": "I_kwDOVay__s8AAAABa8Empg",
+  "content_sha": "f45d9d977ae7e01764c9699e70862066832e250468be33aba1eb2ce8da0fc23d",
+  "linked": true,
+  "item_id": "PVTI_lAHODT4ztM4BpKifzhEhiyQ",
+  "fields_written": {
+   "Estimate (h)": 8,
+   "Status": "Todo",
+   "SWP": 3,
+   "PIC": "BE-1",
+   "Công đoạn": "2. BE",
+   "Priority": "Normal",
+   "Iteration": "Sprint 2"
+  }
+ }
+}
