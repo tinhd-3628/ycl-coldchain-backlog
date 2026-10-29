@@ -33,7 +33,7 @@
 | Repo | https://github.com/tinhd-3628/ycl-coldchain-backlog |
 | GitHub Project | https://github.com/users/tinhd-3628/projects/1 (view *Project Overall* và *Sprint Detail view*) |
 | Báo cáo HTML chấm SWP | [`reports/sun-estimate-ycl-coldchain-backlog-20261029-1818.html`](reports/sun-estimate-ycl-coldchain-backlog-20261029-1818.html) (task dev)<br>[`reports/sun-estimate-ycl-coldchain-backlog-qa-tasks-20261029-1911.html`](reports/sun-estimate-ycl-coldchain-backlog-qa-tasks-20261029-1911.html) (task QA) |
-| Mở thử bằng cửa sổ ẩn danh | **Chưa** — repo và Project đang private, sẽ chuyển public và kiểm tra trước khi nộp _(cập nhật dòng này sau khi kiểm)_ |
+| Mở thử khi chưa đăng nhập | **Đã kiểm 2026-10-29** sau khi chuyển public: repo, Project #1, issue, các file md và báo cáo HTML đều mở được không cần đăng nhập (HTTP 200 khi không gửi token). Mở lại bằng cửa sổ ẩn danh trước khi nộp |
 
 ## Cấu trúc repo
 
